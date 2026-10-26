@@ -1,0 +1,33 @@
+# Model Pricing Table
+# Prices in USD per 1,000,000 tokens (1M tokens)
+# Dated: 2024-10-01
+# Used strictly by eval/metrics.py to compute dollar cost per 1k queries.
+
+effective_date: "2024-10-01"
+currency: "USD"
+
+models:
+  gpt-4o-mini:
+    provider: "openai"
+    input_cost_per_1m: 0.150
+    output_cost_per_1m: 0.600
+  gpt-4o:
+    provider: "openai"
+    input_cost_per_1m: 2.500
+    output_cost_per_1m: 10.000
+  gemini-1.5-flash:
+    provider: "google"
+    input_cost_per_1m: 0.075
+    output_cost_per_1m: 0.300
+  gemini-1.5-pro:
+    provider: "google"
+    input_cost_per_1m: 1.250
+    output_cost_per_1m: 5.000
+  claude-3-5-haiku:
+    provider: "anthropic"
+    input_cost_per_1m: 0.800
+    output_cost_per_1m: 4.000
+  claude-3-5-sonnet:
+    provider: "anthropic"
+    input_cost_per_1m: 3.000
+    output_cost_per_1m: 15.000
