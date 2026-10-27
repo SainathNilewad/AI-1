@@ -18,5 +18,7 @@ htmlcov/
 # IDE and OS
 .vscode/
 .idea/
-.DS_Store
-Thumbs.db
+# Archives
+*.zip
+*.tar.gz
+*.rar
