@@ -6,6 +6,7 @@ All paths are resolved relative to the project root to prevent working-directory
 
 from pathlib import Path
 from typing import Any, Dict
+
 import yaml
 
 # Resolve project root as the parent of this file's directory (src/ -> project_root)

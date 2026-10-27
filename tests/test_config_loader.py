@@ -3,8 +3,10 @@ Unit tests for src/config_loader.py
 """
 
 from pathlib import Path
+
 import pytest
-from src.config_loader import load_yaml, load_pricing_config
+
+from src.config_loader import load_pricing_config, load_yaml
 
 
 def test_load_pricing_config_success():
