@@ -44,3 +44,10 @@ This document records all architectural, statistical, and modeling decisions for
 
 * **Decision:** All evaluation runs will use `temperature = 0` (or the minimum supported deterministic setting) and pinned model IDs (e.g., `gpt-4o-mini-2024-07-18` / `gpt-4o-2024-08-06`).
 * **Why:** Reproducibility. Raw model responses for each run will be saved in `eval/results/` to enable post-hoc audits and prevent unverified metric claims.
+
+---
+
+## 6. Deployment Interface: Streamlit
+
+* **Decision:** Deploy via a single `app.py` on Streamlit Community Cloud rather than FastAPI + Docker.
+* **Why:** Streamlit provides a direct interactive interface for live user queries, side-by-side model comparison, and visualization of evaluation metrics. API secrets are handled safely via `st.secrets` (falling back to local environment variables), with rate-limits (10 queries per session, 200 characters max) to prevent API credit exhaustion.

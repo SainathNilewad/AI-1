@@ -39,9 +39,9 @@ flowchart TD
 │   ├── baselines.py       # B1 (regex), B2 (cheap), B3 (large) (Phase 2)
 │   ├── cascade.py         # Cost-aware router logic (Phase 3)
 │   ├── confidence.py      # Log-prob and self-consistency metrics (Phase 4)
-│   ├── cache.py           # Exact & semantic cache with wrong-hit guard (Phase 5)
-│   └── api.py             # FastAPI service (Phase 6)
-├── data/                  # Labeled evaluation and synthetic training data
+│   └── cache.py           # Exact & semantic cache with wrong-hit guard
+├── app.py                 # Streamlit interactive application
+├── data/                  # Labeled evaluation data
 │   └── labeling_guide.md  # Annotation rules for ambiguous queries (Phase 1)
 ├── eval/                  # Evaluation harness and statistical scoring
 │   ├── metrics.py         # Field-level F1, paired bootstrap CIs, cost (Phase 2)

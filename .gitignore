@@ -14,6 +14,7 @@ htmlcov/
 # Secrets and environment configs
 .env
 .env.local
+.streamlit/secrets.toml
 
 # Tooling and caches
 .ruff_cache/
