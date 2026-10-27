@@ -29,7 +29,7 @@ This document records all architectural, statistical, and modeling decisions for
 
 * **Decision:** Keep domain specifications (schema, aliases, units, prompts) out of Python code.
 * **Why:** The engine must be domain-agnostic. Adding a new domain (e.g., jobs) should require only a new YAML config file without altering normalizer, cascade, or validation code.
-* **Relative Path Handling:** All file operations in `src/config_loader.py` resolve relative to `PROJECT_ROOT` to prevent path-resolution failures when executing commands from different working directories or CI environments.
+* **Relative Path Handling:** All file operations in `src/config.py` resolve relative to `PROJECT_ROOT` to prevent path-resolution failures when executing commands from different working directories or CI environments.
 
 ---
 

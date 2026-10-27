@@ -32,10 +32,10 @@ flowchart TD
 │   ├── prices.yaml        # Dated model pricing table
 │   └── real_estate.yaml   # Real estate schema, aliases, units, prompts (Phase 1)
 ├── src/                   # Core pipeline modules
-│   ├── config_loader.py   # Safe YAML loader with root resolution
+│   ├── config.py          # Safe YAML loader with root resolution
 │   ├── normalizer.py      # Hinglish text and unit normalizer (Phase 1)
 │   ├── schema.py          # Pydantic filter schemas (Phase 1)
-│   ├── llm_client.py      # Provider API wrapper with log-probs (Phase 2)
+│   ├── llm.py             # Provider API wrapper with log-probs (Phase 2)
 │   ├── baselines.py       # B1 (regex), B2 (cheap), B3 (large) (Phase 2)
 │   ├── cascade.py         # Cost-aware router logic (Phase 3)
 │   ├── confidence.py      # Log-prob and self-consistency metrics (Phase 4)
