@@ -36,3 +36,13 @@ def load_domain_config(domain: str = "real_estate") -> dict[str, Any]:
 def load_pricing_config() -> dict[str, Any]:
     """Load model token pricing table from configs/prices.yaml."""
     return load_yaml(CONFIGS_DIR / "prices.yaml")
+
+
+if __name__ == "__main__":
+    pricing = load_pricing_config()
+    print("Hinglish Query Engine - Config Loader")
+    print(f"Project root: {PROJECT_ROOT}")
+    print(f"Pricing effective date: {pricing.get('effective_date')}")
+    print(f"Configured models ({len(pricing.get('models', {}))}):")
+    for model, rates in pricing.get("models", {}).items():
+        print(f"  - {model:<18} Input: ${rates['input_cost_per_1m']:.3f}/1M | Output: ${rates['output_cost_per_1m']:.3f}/1M")
