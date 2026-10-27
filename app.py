@@ -7,7 +7,8 @@ import streamlit as st
 
 from src.baselines import parse_b1, parse_b2, parse_b3, parse_cascade
 from src.config import PROJECT_ROOT
-from src.search import format_inr, search_properties
+from src.property_api import get_property_client
+from src.search import format_inr, search_properties_api
 
 # 1. Page Configuration & Header
 st.set_page_config(page_title="Hinglish Real Estate Query Parser", page_icon="🏠", layout="wide")
@@ -27,7 +28,50 @@ def _resolve_api_key() -> str:
         return os.getenv("GROQ_API_KEY", "")
 
 
+def _resolve_property_api_config() -> tuple[str, str, str]:
+    try:
+        p_key = str(st.secrets.get("REAL_ESTATE_API_KEY", os.getenv("REAL_ESTATE_API_KEY", "")))
+        p_provider = str(st.secrets.get("REAL_ESTATE_API_PROVIDER", os.getenv("REAL_ESTATE_API_PROVIDER", "auto")))
+        p_url = str(st.secrets.get("REAL_ESTATE_API_BASE_URL", os.getenv("REAL_ESTATE_API_BASE_URL", "")))
+        return p_key, p_provider, p_url
+    except Exception:  # noqa: BLE001
+        return (
+            os.getenv("REAL_ESTATE_API_KEY", ""),
+            os.getenv("REAL_ESTATE_API_PROVIDER", "auto"),
+            os.getenv("REAL_ESTATE_API_BASE_URL", ""),
+        )
+
+
 api_key = _resolve_api_key()
+env_prop_key, env_prop_provider, env_prop_url = _resolve_property_api_config()
+
+# Sidebar: Property Provider Settings
+with st.sidebar:
+    st.header("⚙️ Data Settings")
+    st.markdown("### Real Estate Property Provider")
+    provider_choice = st.radio(
+        "Listing Provider:",
+        options=["Local Catalog (Verified Indian Listings)", "External REST API (RentCast Standard)"],
+        index=0 if env_prop_provider == "local" or not env_prop_key else 1,
+        help="Select between verified local Indian property database or external live REST API.",
+    )
+    is_live_selected = "External REST API" in provider_choice
+
+    prop_api_key = st.text_input(
+        "Property API Key (X-Api-Key):",
+        value=env_prop_key,
+        type="password",
+        disabled=not is_live_selected,
+        help="API key for authorized live real estate listings.",
+    )
+    prop_api_url = st.text_input(
+        "Custom Endpoint (Optional):",
+        value=env_prop_url,
+        disabled=not is_live_selected,
+        placeholder="https://api.rentcast.io/v1/listings/rental/long-term",
+    )
+    page_size_val = st.selectbox("Listings per page:", options=[6, 9, 12, 18], index=1)
+
 
 # 3. Clickable Example Queries
 EXAMPLES = [
@@ -112,40 +156,69 @@ if parse_btn:
 
             # Real Estate Search & Visual Property Listings
             st.divider()
-            matched_props, is_fallback = search_properties(res.filter)
-            st.subheader(f"🏢 Matching Properties ({len(matched_props)} found)")
+            prop_client = get_property_client(
+                provider_override="live" if is_live_selected else "local",
+                api_key_override=prop_api_key if is_live_selected else "",
+                base_url_override=prop_api_url if is_live_selected and prop_api_url else None,
+            )
 
-            if is_fallback:
+            with st.spinner("Searching property listings..."):
+                search_resp = search_properties_api(
+                    res.filter,
+                    client=prop_client,
+                    page=1,
+                    page_size=page_size_val,
+                )
+
+            p_col1, p_col2 = st.columns([3, 1])
+            with p_col1:
+                st.subheader(f"🏢 Matching Properties ({len(search_resp.properties)} shown)")
+            with p_col2:
+                if search_resp.is_live_api:
+                    st.success(f"🌐 {search_resp.provider_name}")
+                else:
+                    st.info(f"📦 {search_resp.provider_name}")
+
+            if search_resp.error_message:
+                st.error(f"⚠️ Provider Notice: {search_resp.error_message}")
+
+            if search_resp.is_fallback:
                 st.info("💡 Showing closest matching properties based on relaxed budget and location.")
 
-            if not matched_props:
+            if not search_resp.properties and not search_resp.error_message:
                 st.warning("No properties matching this criteria currently in database.")
-            else:
-                for i in range(0, len(matched_props), 3):
-                    chunk = matched_props[i : i + 3]
+            elif search_resp.properties:
+                for i in range(0, len(search_resp.properties), 3):
+                    chunk = search_resp.properties[i : i + 3]
                     p_cols = st.columns(3)
                     for c_idx, prop in enumerate(chunk):
                         with p_cols[c_idx], st.container(border=True):
-                            if prop.get("photo"):
-                                st.image(prop["photo"], use_container_width=True)
-                                st.markdown(f"### {format_inr(prop['price'], prop.get('tx'))}")
-                                st.markdown(f"**{prop.get('title', 'Property Listing')}**")
-                                st.caption(f"📍 {prop.get('locality', '-')}, {prop.get('city', '-')}")
+                            if prop.photo_url:
+                                st.image(prop.photo_url, use_container_width=True)
+                            st.markdown(f"### {format_inr(prop.price, prop.transaction)}")
+                            st.markdown(f"**{prop.title}**")
+                            loc_str = f"📍 {prop.locality + ', ' if prop.locality else ''}{prop.city}"
+                            st.caption(loc_str)
 
-                                bhk_txt = f"{prop.get('bhk', '-')} BHK" if prop.get("bhk") else "Plot/Studio"
-                                sqft_txt = f"{prop.get('sqft', '-')} sq.ft" if prop.get("sqft") else ""
-                                st.write(f"🛏️ **{bhk_txt}** | 📐 {sqft_txt}")
+                            bhk_txt = f"{prop.bedrooms} BHK" if prop.bedrooms else "Studio/Unit"
+                            sqft_txt = f"{prop.sqft:,} sq.ft" if prop.sqft else ""
+                            st.write(f"🛏️ **{bhk_txt}** | 📐 {sqft_txt}")
 
-                                furn_val = str(prop.get("furn", "-")).title()
-                                poss_val = str(prop.get("poss", "-")).replace("_", " ").title()
-                                st.write(f"🛋️ {furn_val} | 🔑 {poss_val}")
+                            furn_val = str(prop.furnishing or "-").title()
+                            poss_val = str(prop.possession or "-").replace("_", " ").title()
+                            st.write(f"🛋️ {furn_val} | 🔑 {poss_val}")
 
-                                if prop.get("near"):
-                                    amenities = " • ".join(prop["near"])
-                                    st.caption(f"✨ Near: {amenities}")
+                            if prop.near:
+                                amenities = " • ".join(prop.near)
+                                st.caption(f"✨ Near: {amenities}")
 
-                                if st.button("Contact Agent", key=f"contact_{prop.get('id', f'{i}_{c_idx}')}"):
-                                    st.success(f"Broker notified for {prop.get('id')}! Reference inquiry sent.")
+                            st.caption(f"🏷️ Source: `{prop.source}`")
+
+                            if prop.listing_url:
+                                st.link_button("🔗 View Original Listing", prop.listing_url, use_container_width=True)
+
+                            if st.button("Contact Agent", key=f"contact_{prop.id}_{i}_{c_idx}"):
+                                st.success(f"Broker notified for {prop.id}! Reference inquiry sent.")
 
             if compare_mode:
                 st.divider()

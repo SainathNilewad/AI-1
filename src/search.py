@@ -4,6 +4,9 @@ import json
 from typing import Any
 
 from src.config import PROJECT_ROOT
+from src.property_api.base import BasePropertyClient
+from src.property_api.factory import get_property_client
+from src.property_api.models import PropertySearchParams, PropertySearchResponse
 from src.schema import SearchFilter
 
 PROPERTIES_FILE = PROJECT_ROOT / "Data" / "properties.json"
@@ -55,6 +58,37 @@ def score_property(prop: dict[str, Any], filter_obj: SearchFilter) -> int:
         score += 20
 
     return score
+
+
+def filter_to_params(
+    filter_obj: SearchFilter,
+    page: int = 1,
+    page_size: int = 9,
+) -> PropertySearchParams:
+    """Convert parsed SearchFilter into PropertySearchParams for property clients."""
+    return PropertySearchParams(
+        city=filter_obj.city,
+        locality=filter_obj.locality,
+        transaction=filter_obj.transaction,
+        bedrooms=filter_obj.bhk,
+        property_type=filter_obj.property_type,
+        budget_min=filter_obj.budget_min,
+        budget_max=filter_obj.budget_max,
+        page=page,
+        page_size=page_size,
+    )
+
+
+def search_properties_api(
+    filter_obj: SearchFilter,
+    client: BasePropertyClient | None = None,
+    page: int = 1,
+    page_size: int = 9,
+) -> PropertySearchResponse:
+    """Execute unified property search against the active property provider client."""
+    active_client = client or get_property_client()
+    params = filter_to_params(filter_obj, page=page, page_size=page_size)
+    return active_client.search(params)
 
 
 def search_properties(
