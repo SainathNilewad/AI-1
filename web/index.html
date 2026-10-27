@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GharKhoj AI - Next-Gen Hinglish Real Estate Search Portal</title>
+  <meta name="description" content="Search verified properties across India using colloquial Hinglish queries. Powered by cost-aware dual-tier AI cascades.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Effects -->
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="/" class="brand-logo" id="nav-brand">
+        <span class="logo-badge">🏠</span>
+        <span>GharKhoj</span>
+        <span class="brand-ai-tag">AI Powered</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#search-section" class="nav-link active">Search Properties</a>
+        <a href="#listings-section" class="nav-link">Top Listings</a>
+        <a href="#how-it-works" class="nav-link">How AI Works</a>
+        <a href="#cities-section" class="nav-link">Cities</a>
+      </div>
+
+      <a href="#search-section" class="btn-primary" id="cta-explore">
+        <span>⚡ Try Hinglish Search</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section" id="search-section">
+    <div class="container">
+      <div class="hero-pill">
+        <span>✨ Powered by Dual-Tier LLM Cascade Engine</span>
+      </div>
+      <h1 class="hero-title">
+        Find Your Dream Home With <br>
+        <span class="gradient-text">Pure Everyday Hinglish</span>
+      </h1>
+      <p class="hero-subtitle">
+        Type exactly how you speak. Ask for <em>"noida me 2bhk sasta near metro"</em> or <em>"gurgaon sec 54 3bhk ready to move 1.5cr"</em>. Our real estate AI extracts your exact requirements in milliseconds.
+      </p>
+
+      <!-- Search Card -->
+      <div class="search-card">
+        <div class="search-tabs">
+          <button class="tab-btn active" data-tx="all" id="tab-all">All</button>
+          <button class="tab-btn" data-tx="rent" id="tab-rent">Rent / Kiraya</button>
+          <button class="tab-btn" data-tx="buy" id="tab-buy">Buy / Kharidna</button>
+        </div>
+
+        <form id="search-form" class="search-input-group">
+          <span class="search-icon">🔍</span>
+          <input 
+            type="text" 
+            id="search-input" 
+            class="search-input" 
+            placeholder="Search e.g. 'noida me 2bhk sasta near metro' or 'furnished 1bhk rent dwarka 25k'..."
+            value="noida me 2bhk sasta near metro"
+            autocomplete="off"
+          />
+          <button type="submit" class="search-submit-btn" id="search-btn">
+            <span>Find Homes</span>
+            <span>→</span>
+          </button>
+        </form>
+
+        <!-- Quick Query Suggestion Chips -->
+        <div class="quick-queries">
+          <span class="quick-label">Try Asking:</span>
+          <span class="query-chip" data-query="noida me 2bhk sasta near metro">Noida me 2BHK sasta near metro</span>
+          <span class="query-chip" data-query="gurgaon sec 54 3bhk ready to move 1.5cr tak">Gurgaon Sec 54 3BHK ready to move 1.5cr</span>
+          <span class="query-chip" data-query="furnished 1bhk rent dwarka 25k">Furnished 1BHK rent Dwarka 25k</span>
+          <span class="query-chip" data-query="south delhi 4bhk luxury apartment buy 3 to 4 cr">South Delhi 4BHK luxury buy 3 to 4 cr</span>
+          <span class="query-chip" data-query="whitefield bangalore 2bhk semi furnished flat 30k rent">Whitefield Bangalore 2BHK 30k rent</span>
+        </div>
+      </div>
+
+      <!-- AI Live Inspector HUD -->
+      <div class="ai-hud-container" id="ai-hud">
+        <div class="ai-hud-box">
+          <div class="ai-hud-header">
+            <div class="ai-hud-title">
+              <span>⚡ AI Cascade Engine Active</span>
+            </div>
+            <div class="ai-hud-metrics">
+              <div class="metric-pill">Active Tier: <span class="metric-val" id="hud-tier">Tier 1 (20B LLM)</span></div>
+              <div class="metric-pill">Latency: <span class="metric-val" id="hud-latency">14.2 ms</span></div>
+              <div class="metric-pill">Cost: <span class="metric-val" id="hud-cost">$0.000000</span></div>
+            </div>
+          </div>
+          <div class="ai-tags-row" id="hud-tags">
+            <!-- Dynamic extracted intent tags -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Listings Main Content Section -->
+  <main class="container" id="listings-section">
+    <!-- Filter and Results Bar -->
+    <div class="filter-bar">
+      <div class="city-filters" id="cities-section">
+        <button class="city-btn active" data-city="all">All Cities</button>
+        <button class="city-btn" data-city="Noida">Noida</button>
+        <button class="city-btn" data-city="Gurugram">Gurugram</button>
+        <button class="city-btn" data-city="Delhi">Delhi</button>
+        <button class="city-btn" data-city="Mumbai">Mumbai</button>
+        <button class="city-btn" data-city="Bengaluru">Bengaluru</button>
+        <button class="city-btn" data-city="Pune">Pune</button>
+        <button class="city-btn" data-city="Hyderabad">Hyderabad</button>
+      </div>
+
+      <div class="results-meta">
+        <span class="results-count" id="results-count">Loading listings...</span>
+      </div>
+    </div>
+
+    <!-- Property Card Grid -->
+    <div class="property-grid" id="property-grid">
+      <!-- Injected via JavaScript -->
+    </div>
+  </main>
+
+  <!-- "Why GharKhoj AI" Feature Section -->
+  <section class="container" id="how-it-works" style="padding: 60px 24px; border-top: 1px solid var(--border); margin-top: 40px;">
+    <div style="text-align: center; margin-bottom: 48px;">
+      <h2 style="font-family: var(--font-heading); font-size: 2.3rem; margin-bottom: 12px; color: #fff;">
+        How Our <span class="gradient-text">Hinglish Query Engine</span> Works
+      </h2>
+      <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">
+        Real estate terminology in India is conversational and full of mixed colloquialisms. Here is how we bridge natural intent with validated property databases.
+      </p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+      <div style="background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 30px;">
+        <div style="font-size: 2.2rem; margin-bottom: 16px;">🗣️</div>
+        <h3 style="font-size: 1.25rem; font-family: var(--font-heading); color: #fff; margin-bottom: 10px;">Colloquial Hinglish Comprehension</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">
+          Normalizes words like <em>"sasta"</em> (budget), <em>"kiraya"</em> (rent), <em>"crore / lac / k"</em> (unit conversions), and regional alias mapping (Gurgaon → Gurugram, Bangalore → Bengaluru).
+        </p>
+      </div>
+
+      <div style="background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 30px;">
+        <div style="font-size: 2.2rem; margin-bottom: 16px;">⚡</div>
+        <h3 style="font-size: 1.25rem; font-family: var(--font-heading); color: #fff; margin-bottom: 10px;">Cost-Aware Model Cascade</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">
+          Evaluates incoming queries using a fast, low-cost model first. Escalates to a heavy reasoning model only when schema validation fails or confidence dips below 85%, cutting API costs by 70%+.
+        </p>
+      </div>
+
+      <div style="background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 30px;">
+        <div style="font-size: 2.2rem; margin-bottom: 16px;">🎯</div>
+        <h3 style="font-size: 1.25rem; font-family: var(--font-heading); color: #fff; margin-bottom: 10px;">Intelligent Inventory Ranking</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">
+          Strict property filtering combined with locality proximity scores (+60), requested amenities (+25 for metro/park), and graceful budget relaxation when exact constraints are too tight.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Property Quick View Modal -->
+  <div class="modal-overlay" id="property-modal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close">✕</button>
+      <div id="modal-content">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Footer -->
+  <footer style="background: #050811; border-top: 1px solid var(--border); padding: 40px 0; margin-top: 60px;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <span style="font-size: 1.3rem;">🏠</span>
+        <span style="font-weight: 700; color: #fff; font-family: var(--font-heading);">GharKhoj AI</span>
+        <span style="color: var(--text-sub); font-size: 0.85rem;">© 2026. Next-Generation Hinglish Real Estate Search Portal.</span>
+      </div>
+      <div style="display: flex; gap: 20px; font-size: 0.9rem; color: var(--text-muted);">
+        <span>Noida</span>
+        <span>•</span>
+        <span>Gurugram</span>
+        <span>•</span>
+        <span>Delhi NCR</span>
+        <span>•</span>
+        <span>Mumbai</span>
+        <span>•</span>
+        <span>Bengaluru</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- App Logic JavaScript -->
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
