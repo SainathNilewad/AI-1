@@ -133,6 +133,6 @@ python eval/run_eval.py --data Data/dev.jsonl
 
 ### 5. Launch Streamlit Application
 ```bash
-streamlit run app.py
+streamlit run app.py --server.port 8505
 ```
-Open [http://localhost:8501](http://localhost:8501) in your browser.
+Open [http://localhost:8505](http://localhost:8505) in your browser.
