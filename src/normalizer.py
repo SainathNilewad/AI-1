@@ -1,4 +1,5 @@
 import re
+from typing import Any
 
 
 def clean_text(text: str) -> str:
@@ -91,3 +92,52 @@ def extract_budget(text: str, units_map: dict[str, int]) -> tuple[int | None, in
         return (None, parse_currency_amount(val, unit, units_map))
 
     return (None, None)
+
+
+def normalize_query(text: str) -> str:
+    """Lowercase and normalize whitespace in query."""
+    return clean_text(text)
+
+
+def extract_regex_candidates(text: str, domain: str = "real_estate") -> dict[str, Any]:
+    """Extract candidate filter fields using deterministic regex and keyword matching."""
+    from src.config import load_domain_config
+
+    clean = clean_text(text)
+    cfg = load_domain_config(domain)
+    units_map = cfg.get("units", {})
+    city_aliases = cfg.get("city_aliases", {})
+    keywords = cfg.get("keywords", {})
+
+    bhk = extract_bhk(clean)
+    budget_min, budget_max = extract_budget(clean, units_map)
+
+    matched_city = None
+    for alias, canonical in sorted(city_aliases.items(), key=lambda x: len(x[0]), reverse=True):
+        if re.search(rf"\b{re.escape(alias)}\b", clean):
+            matched_city = canonical
+            break
+
+    matched_ptype = None
+    prop_keywords = keywords.get("property_type", {})
+    for kw, canonical in sorted(prop_keywords.items(), key=lambda x: len(x[0]), reverse=True):
+        if re.search(rf"\b{re.escape(kw)}\b", clean):
+            matched_ptype = canonical
+            break
+
+    matched_tx = None
+    tx_keywords = keywords.get("transaction", {})
+    for kw, canonical in sorted(tx_keywords.items(), key=lambda x: len(x[0]), reverse=True):
+        if re.search(rf"\b{re.escape(kw)}\b", clean):
+            matched_tx = canonical
+            break
+
+    return {
+        "bhk": bhk,
+        "budget_min": budget_min,
+        "budget_max": budget_max,
+        "city": matched_city,
+        "locality": None,
+        "property_type": matched_ptype,
+        "transaction": matched_tx,
+    }

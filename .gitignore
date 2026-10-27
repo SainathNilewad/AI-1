@@ -17,6 +17,7 @@ htmlcov/
 .streamlit/secrets.toml
 
 # Tooling and caches
+.cache/
 .ruff_cache/
 .ipynb_checkpoints/
 

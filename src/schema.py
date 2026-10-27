@@ -39,3 +39,7 @@ class RealEstateQuery(BaseModel):
                 f"area_sqft_min ({self.area_sqft_min}) cannot exceed area_sqft_max ({self.area_sqft_max})"
             )
         return self
+
+
+# SearchFilter alias for general query engine naming
+SearchFilter = RealEstateQuery

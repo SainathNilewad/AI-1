@@ -1,13 +1,11 @@
 """Hinglish Query Understanding Engine - Streamlit Interactive App."""
 
 import os
-import time
 
 import streamlit as st
 
+from src.baselines import parse_b1, parse_b2, parse_b3, parse_cascade
 from src.config import PROJECT_ROOT
-from src.normalizer import extract_regex_candidates, normalize_query
-from src.schema import SearchFilter
 
 # 1. Page Configuration & Header
 st.set_page_config(page_title="Hinglish Query Parser", layout="wide")
@@ -24,10 +22,8 @@ api_key = st.secrets.get("GROQ_API_KEY", os.getenv("GROQ_API_KEY", ""))
 
 # 3. Clickable Example Queries
 EXAMPLES = [
-    "noida me 2bhk sasta near metro",
-    "gurgaon sec 54 3bhk under 1.5cr",
-    "bandra flat 2 bhk rent under 60k",
-    "south delhi 4bhk luxury apartment",
+    "noida me 2bhk sasta near metro", "gurgaon sec 54 3bhk under 1.5cr",
+    "bandra flat 2 bhk rent under 60k", "south delhi 4bhk luxury apartment",
     "whitefield bangalore 1bhk 25k",
 ]
 st.write("**Click an example query:**")
@@ -54,32 +50,39 @@ if parse_btn:
         st.error("Session limit reached (10 queries maximum). Please reload the page to start a new session.")
     else:
         st.session_state.query_count += 1
-        t0 = time.perf_counter()
         try:
-            normalized = normalize_query(query)
-            extracted = extract_regex_candidates(normalized)
-            result = SearchFilter(
-                bhk=extracted.get("bhk"),
-                budget_min=extracted.get("budget_min"),
-                budget_max=extracted.get("budget_max"),
-                city=extracted.get("city"),
-                locality=extracted.get("locality"),
-                property_type=extracted.get("property_type"),
-            )
-            latency_ms = round((time.perf_counter() - t0) * 1000, 2)
+            if api_key:
+                res = parse_cascade(query, api_key=api_key)
+            else:
+                res = parse_b1(query)
+                st.info("Running local rule baseline B1. Set GROQ_API_KEY to activate Groq cascade.")
 
             st.success(f"Parsed successfully (Session query {st.session_state.query_count}/10)")
             m1, m2, m3, m4 = st.columns(4)
-            m1.metric("Tier Used", "Tier 0 (Rule Baseline)")
-            m2.metric("Confidence", "High" if result.bhk and result.city else "Medium")
-            m3.metric("Latency", f"{latency_ms} ms")
-            m4.metric("Cost", "$0.000000")
+            tier_names = {"cascade_tier1": "Tier 1 (Cheap 20B)", "cascade_tier2": "Tier 2 (Large 120B)"}
+            m1.metric("Tier Used", tier_names.get(res.tier, "Tier 0 (Rule Baseline)"))
+            m2.metric("Confidence", f"{res.confidence * 100:.0f}%")
+            m3.metric("Latency", f"{res.latency_ms:.1f} ms")
+            m4.metric("Cost", f"${res.cost_usd:.6f}")
 
             st.subheader("Structured Search Filter")
-            st.json(result.model_dump(exclude_none=True))
+            st.json(res.filter.model_dump(exclude_none=True))
 
             if compare_mode:
-                st.info("Side-by-side LLM model comparison activates upon Groq API key configuration and cascade activation.")
+                st.divider()
+                st.subheader("Model Comparison: Cheap (20B) vs Large (120B)")
+                if api_key:
+                    c1, c2 = st.columns(2)
+                    b2_res = parse_b2(query, api_key=api_key)
+                    b3_res = parse_b3(query, api_key=api_key)
+                    with c1:
+                        st.markdown(f"**Cheap (20B)** | Latency: {b2_res.latency_ms}ms | Cost: ${b2_res.cost_usd:.6f}")
+                        st.json(b2_res.filter.model_dump(exclude_none=True))
+                    with c2:
+                        st.markdown(f"**Large (120B)** | Latency: {b3_res.latency_ms}ms | Cost: ${b3_res.cost_usd:.6f}")
+                        st.json(b3_res.filter.model_dump(exclude_none=True))
+                else:
+                    st.warning("GROQ_API_KEY is required to compare live LLM model outputs.")
         except Exception as e:  # noqa: BLE001
             st.error(f"Failed to parse query: {e}")
 
