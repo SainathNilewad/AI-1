@@ -7,6 +7,7 @@ import streamlit as st
 
 from src.baselines import parse_b1, parse_b2, parse_b3, parse_cascade
 from src.config import PROJECT_ROOT
+from src.search import format_inr, search_properties
 
 # 1. Page Configuration & Header
 st.set_page_config(page_title="Hinglish Real Estate Query Parser", page_icon="🏠", layout="wide")
@@ -108,6 +109,43 @@ if parse_btn:
 
             st.subheader("Validated JSON Filter (Search Engine Ready)")
             st.json(res.filter.model_dump(exclude_none=True))
+
+            # Real Estate Search & Visual Property Listings
+            st.divider()
+            matched_props, is_fallback = search_properties(res.filter)
+            st.subheader(f"🏢 Matching Properties ({len(matched_props)} found)")
+
+            if is_fallback:
+                st.info("💡 Showing closest matching properties based on relaxed budget and location.")
+
+            if not matched_props:
+                st.warning("No properties matching this criteria currently in database.")
+            else:
+                for i in range(0, len(matched_props), 3):
+                    chunk = matched_props[i : i + 3]
+                    p_cols = st.columns(3)
+                    for c_idx, prop in enumerate(chunk):
+                        with p_cols[c_idx], st.container(border=True):
+                            if prop.get("photo"):
+                                st.image(prop["photo"], use_container_width=True)
+                                st.markdown(f"### {format_inr(prop['price'], prop.get('tx'))}")
+                                st.markdown(f"**{prop.get('title', 'Property Listing')}**")
+                                st.caption(f"📍 {prop.get('locality', '-')}, {prop.get('city', '-')}")
+
+                                bhk_txt = f"{prop.get('bhk', '-')} BHK" if prop.get("bhk") else "Plot/Studio"
+                                sqft_txt = f"{prop.get('sqft', '-')} sq.ft" if prop.get("sqft") else ""
+                                st.write(f"🛏️ **{bhk_txt}** | 📐 {sqft_txt}")
+
+                                furn_val = str(prop.get("furn", "-")).title()
+                                poss_val = str(prop.get("poss", "-")).replace("_", " ").title()
+                                st.write(f"🛋️ {furn_val} | 🔑 {poss_val}")
+
+                                if prop.get("near"):
+                                    amenities = " • ".join(prop["near"])
+                                    st.caption(f"✨ Near: {amenities}")
+
+                                if st.button("Contact Agent", key=f"contact_{prop.get('id', f'{i}_{c_idx}')}"):
+                                    st.success(f"Broker notified for {prop.get('id')}! Reference inquiry sent.")
 
             if compare_mode:
                 st.divider()

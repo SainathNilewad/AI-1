@@ -37,11 +37,12 @@ flowchart TD
 - **Domain & Pricing Models:** Domain rules in `configs/real_estate.yaml` (cities, localities, unit multipliers, categories) and verified Groq pricing in `configs/prices.yaml`.
 - **Schema & Normalizer:** Pydantic validation schema with numeric range verification (`src/schema.py`) and robust Hinglish text, unit, alias, and locality normalizer (`src/normalizer.py`).
 - **Baselines & Model Cascade:** Rule baseline (B1), cheap LLM baseline (B2), large LLM baseline (B3), and confidence-driven cascade router with fallback escalation (`src/baselines.py`, `src/llm.py`).
+- **Property Inventory & Search Engine:** Realistic 148-listing inventory (`Data/properties.json`) and ranking search engine with strict filters and relaxed fallbacks (`src/search.py`).
 - **Evaluation Harness & Statistical Testing:** Comprehensive field-level precision/recall/F1, exact match, p50/p95 latency, cost accounting, and 1,000-resample paired bootstrap hypothesis testing (`eval/metrics.py`, `eval/run_eval.py`).
 - **Datasets:** Hand-written DEV dataset (`Data/dev.jsonl`, 60 queries) and TEST dataset (`Data/test.jsonl`, 30 queries) adhering strictly to `Data/labeling_guide.md`.
 - **Offline Evaluation & Pareto Plotting:** Reproducible evaluation pipeline generating `eval/results/summary.json` and `eval/results/cost_vs_accuracy.png`.
-- **Interactive Web Interface:** Streamlit interactive application with query input, model comparison, visual attribute cards, and live Pareto evaluation display (`app.py`).
-- **Unit Test Suite:** Comprehensive test suite passing 29 unit and integration tests across normalizer, config, baselines, metrics, and eval runner (`tests/`).
+- **Interactive Web Interface:** Streamlit interactive application with live query parsing, visual property cards with photos and broker inquiries, and offline benchmark dashboard (`app.py`).
+- **Unit Test Suite:** Comprehensive test suite passing 35 unit and integration tests across normalizer, config, baselines, metrics, eval runner, and search engine (`tests/`).
 
 ---
 
@@ -55,6 +56,7 @@ AI-1/
 ├── Data/
 │   ├── dev.jsonl
 │   ├── test.jsonl
+│   ├── properties.json
 │   └── labeling_guide.md
 ├── eval/
 │   ├── __init__.py
@@ -71,14 +73,16 @@ AI-1/
 │   ├── config.py
 │   ├── llm.py
 │   ├── normalizer.py
-│   └── schema.py
+│   ├── schema.py
+│   └── search.py
 ├── tests/
 │   ├── __init__.py
 │   ├── test_baselines.py
 │   ├── test_config.py
 │   ├── test_metrics.py
 │   ├── test_normalizer.py
-│   └── test_run_eval.py
+│   ├── test_run_eval.py
+│   └── test_search.py
 ├── .env.example
 ├── .gitignore
 ├── DECISIONS.md

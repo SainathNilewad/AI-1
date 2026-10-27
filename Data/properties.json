@@ -1,0 +1,2602 @@
+[
+  {
+    "city": "Noida",
+    "locality": "Sector 62",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 28000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "market"
+    ],
+    "sqft": 1050,
+    "title": "Stunning 2 BHK with Balcony in Sector 62",
+    "id": "PROP-0001",
+    "photo": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Noida",
+    "locality": "Sector 62",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 30800,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "market"
+    ],
+    "sqft": 1102,
+    "title": "Executive 2 BHK in Sector 62",
+    "id": "PROP-0002",
+    "photo": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Noida",
+    "locality": "Sector 62",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 25760,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "market"
+    ],
+    "sqft": 997,
+    "title": "Value 2 BHK at Sector 62",
+    "id": "PROP-0003",
+    "photo": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Noida",
+    "locality": "Sector 62",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 24000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "metro"
+    ],
+    "sqft": 980,
+    "title": "Affordable 2 BHK Flat Near Electronic City Metro",
+    "id": "PROP-0004",
+    "photo": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Noida",
+    "locality": "Sector 62",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 26400,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "metro"
+    ],
+    "sqft": 1029,
+    "title": "Executive 2 BHK in Sector 62",
+    "id": "PROP-0005",
+    "photo": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Noida",
+    "locality": "Sector 62",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 22080,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "metro"
+    ],
+    "sqft": 931,
+    "title": "Value 2 BHK at Sector 62",
+    "id": "PROP-0006",
+    "photo": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Noida",
+    "locality": "Sector 62",
+    "bhk": 1,
+    "type": "flat",
+    "tx": "rent",
+    "price": 12000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "market"
+    ],
+    "sqft": 550,
+    "title": "Cozy 1 RK Studio Apartment near Fortis",
+    "id": "PROP-0007",
+    "photo": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Noida",
+    "locality": "Sector 62",
+    "bhk": 1,
+    "type": "flat",
+    "tx": "rent",
+    "price": 13200,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "market"
+    ],
+    "sqft": 577,
+    "title": "Executive 1 BHK in Sector 62",
+    "id": "PROP-0008",
+    "photo": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Noida",
+    "locality": "Sector 62",
+    "bhk": 1,
+    "type": "flat",
+    "tx": "rent",
+    "price": 11040,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "market"
+    ],
+    "sqft": 522,
+    "title": "Value 1 BHK at Sector 62",
+    "id": "PROP-0009",
+    "photo": "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Noida",
+    "locality": "Sector 137",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "buy",
+    "price": 5500000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "highway",
+      "metro"
+    ],
+    "sqft": 1150,
+    "title": "Spacious 2 BHK High-Rise on Expressway",
+    "id": "PROP-0010",
+    "photo": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Noida",
+    "locality": "Sector 137",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "buy",
+    "price": 6050000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "highway",
+      "metro"
+    ],
+    "sqft": 1207,
+    "title": "Executive 2 BHK in Sector 137",
+    "id": "PROP-0011",
+    "photo": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Noida",
+    "locality": "Sector 137",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "buy",
+    "price": 5060000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "highway",
+      "metro"
+    ],
+    "sqft": 1092,
+    "title": "Value 2 BHK at Sector 137",
+    "id": "PROP-0012",
+    "photo": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Noida",
+    "locality": "Sector 150",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "buy",
+    "price": 11000000,
+    "furn": "unfurnished",
+    "poss": "ready_to_move",
+    "near": [
+      "highway",
+      "park"
+    ],
+    "sqft": 1650,
+    "title": "Luxury 3 BHK Sports City Apartment",
+    "id": "PROP-0013",
+    "photo": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Noida",
+    "locality": "Sector 150",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "buy",
+    "price": 12100000,
+    "furn": "unfurnished",
+    "poss": "ready_to_move",
+    "near": [
+      "highway",
+      "park"
+    ],
+    "sqft": 1732,
+    "title": "Executive 3 BHK in Sector 150",
+    "id": "PROP-0014",
+    "photo": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Noida",
+    "locality": "Sector 150",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "buy",
+    "price": 10120000,
+    "furn": "unfurnished",
+    "poss": "ready_to_move",
+    "near": [
+      "highway",
+      "park"
+    ],
+    "sqft": 1567,
+    "title": "Value 3 BHK at Sector 150",
+    "id": "PROP-0015",
+    "photo": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Noida",
+    "locality": "Sector 75",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "rent",
+    "price": 32000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "market"
+    ],
+    "sqft": 1400,
+    "title": "Premium 3 BHK Flat Walking Distance to Metro",
+    "id": "PROP-0016",
+    "photo": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Noida",
+    "locality": "Sector 75",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "rent",
+    "price": 35200,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "market"
+    ],
+    "sqft": 1470,
+    "title": "Executive 3 BHK in Sector 75",
+    "id": "PROP-0017",
+    "photo": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Noida",
+    "locality": "Sector 75",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "rent",
+    "price": 29440,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "market"
+    ],
+    "sqft": 1330,
+    "title": "Value 3 BHK at Sector 75",
+    "id": "PROP-0018",
+    "photo": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Noida",
+    "locality": "Sector 76",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "buy",
+    "price": 4800000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "metro"
+    ],
+    "sqft": 1020,
+    "title": "Gated Society 2 BHK in Sector 76",
+    "id": "PROP-0019",
+    "photo": "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Noida",
+    "locality": "Sector 76",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "buy",
+    "price": 5280000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "metro"
+    ],
+    "sqft": 1071,
+    "title": "Executive 2 BHK in Sector 76",
+    "id": "PROP-0020",
+    "photo": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Noida",
+    "locality": "Sector 76",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "buy",
+    "price": 4416000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "metro"
+    ],
+    "sqft": 969,
+    "title": "Value 2 BHK at Sector 76",
+    "id": "PROP-0021",
+    "photo": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Noida",
+    "locality": "Sector 18",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 40000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "mall",
+      "metro"
+    ],
+    "sqft": 1100,
+    "title": "Upscale 2 BHK Flat Near Atta Market & Mall of India",
+    "id": "PROP-0022",
+    "photo": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Noida",
+    "locality": "Sector 18",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 44000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "mall",
+      "metro"
+    ],
+    "sqft": 1155,
+    "title": "Executive 2 BHK in Sector 18",
+    "id": "PROP-0023",
+    "photo": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Noida",
+    "locality": "Sector 18",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 36800,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "mall",
+      "metro"
+    ],
+    "sqft": 1045,
+    "title": "Value 2 BHK at Sector 18",
+    "id": "PROP-0024",
+    "photo": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Gurugram",
+    "locality": "Sector 54",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "buy",
+    "price": 14500000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "mall"
+    ],
+    "sqft": 1850,
+    "title": "Golf Course Road 3 BHK Premium Apartment",
+    "id": "PROP-0025",
+    "photo": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Gurugram",
+    "locality": "Sector 54",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "buy",
+    "price": 15950000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "mall"
+    ],
+    "sqft": 1942,
+    "title": "Executive 3 BHK in Sector 54",
+    "id": "PROP-0026",
+    "photo": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Gurugram",
+    "locality": "Sector 54",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "buy",
+    "price": 13340000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "mall"
+    ],
+    "sqft": 1757,
+    "title": "Value 3 BHK at Sector 54",
+    "id": "PROP-0027",
+    "photo": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Gurugram",
+    "locality": "Sector 54",
+    "bhk": 4,
+    "type": "flat",
+    "tx": "buy",
+    "price": 28000000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "mall"
+    ],
+    "sqft": 2600,
+    "title": "Ultra Luxury 4 BHK Condominium Sector 54",
+    "id": "PROP-0028",
+    "photo": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Gurugram",
+    "locality": "Sector 54",
+    "bhk": 4,
+    "type": "flat",
+    "tx": "buy",
+    "price": 30800000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "mall"
+    ],
+    "sqft": 2730,
+    "title": "Executive 4 BHK in Sector 54",
+    "id": "PROP-0029",
+    "photo": "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Gurugram",
+    "locality": "Sector 54",
+    "bhk": 4,
+    "type": "flat",
+    "tx": "buy",
+    "price": 25760000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "mall"
+    ],
+    "sqft": 2470,
+    "title": "Value 4 BHK at Sector 54",
+    "id": "PROP-0030",
+    "photo": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Gurugram",
+    "locality": "Sector 57",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 28000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "market"
+    ],
+    "sqft": 1100,
+    "title": "Independent Builder Floor 2 BHK in Sector 57",
+    "id": "PROP-0031",
+    "photo": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Gurugram",
+    "locality": "Sector 57",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 30800,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "market"
+    ],
+    "sqft": 1155,
+    "title": "Executive 2 BHK in Sector 57",
+    "id": "PROP-0032",
+    "photo": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Gurugram",
+    "locality": "Sector 57",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 25760,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "market"
+    ],
+    "sqft": 1045,
+    "title": "Value 2 BHK at Sector 57",
+    "id": "PROP-0033",
+    "photo": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Gurugram",
+    "locality": "Sector 48",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "buy",
+    "price": 14000000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "school",
+      "hospital"
+    ],
+    "sqft": 1750,
+    "title": "Ready to Move 3 BHK on Sohna Road",
+    "id": "PROP-0034",
+    "photo": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Gurugram",
+    "locality": "Sector 48",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "buy",
+    "price": 15400000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "school",
+      "hospital"
+    ],
+    "sqft": 1837,
+    "title": "Executive 3 BHK in Sector 48",
+    "id": "PROP-0035",
+    "photo": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Gurugram",
+    "locality": "Sector 48",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "buy",
+    "price": 12880000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "school",
+      "hospital"
+    ],
+    "sqft": 1662,
+    "title": "Value 3 BHK at Sector 48",
+    "id": "PROP-0036",
+    "photo": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Gurugram",
+    "locality": "Cyber City",
+    "bhk": 1,
+    "type": "flat",
+    "tx": "rent",
+    "price": 30000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "mall"
+    ],
+    "sqft": 650,
+    "title": "Executive 1 BHK Serviced Apartment near DLF Cyberhub",
+    "id": "PROP-0037",
+    "photo": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Gurugram",
+    "locality": "Cyber City",
+    "bhk": 1,
+    "type": "flat",
+    "tx": "rent",
+    "price": 33000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "mall"
+    ],
+    "sqft": 682,
+    "title": "Executive 1 BHK in Cyber City",
+    "id": "PROP-0038",
+    "photo": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Gurugram",
+    "locality": "Cyber City",
+    "bhk": 1,
+    "type": "flat",
+    "tx": "rent",
+    "price": 27600,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "mall"
+    ],
+    "sqft": 617,
+    "title": "Value 1 BHK at Cyber City",
+    "id": "PROP-0039",
+    "photo": "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Gurugram",
+    "locality": "Sohna Road",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "buy",
+    "price": 4800000,
+    "furn": "unfurnished",
+    "poss": "under_construction",
+    "near": [
+      "highway"
+    ],
+    "sqft": 950,
+    "title": "Modern 2 BHK High-Rise under Construction",
+    "id": "PROP-0040",
+    "photo": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Gurugram",
+    "locality": "Sohna Road",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "buy",
+    "price": 5280000,
+    "furn": "unfurnished",
+    "poss": "under_construction",
+    "near": [
+      "highway"
+    ],
+    "sqft": 997,
+    "title": "Executive 2 BHK in Sohna Road",
+    "id": "PROP-0041",
+    "photo": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Gurugram",
+    "locality": "Sohna Road",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "buy",
+    "price": 4416000,
+    "furn": "unfurnished",
+    "poss": "under_construction",
+    "near": [
+      "highway"
+    ],
+    "sqft": 902,
+    "title": "Value 2 BHK at Sohna Road",
+    "id": "PROP-0042",
+    "photo": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Delhi",
+    "locality": "Dwarka",
+    "bhk": 1,
+    "type": "flat",
+    "tx": "rent",
+    "price": 25000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "market"
+    ],
+    "sqft": 600,
+    "title": "Furnished 1 BHK Flat in Sector 10 Dwarka",
+    "id": "PROP-0043",
+    "photo": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Delhi",
+    "locality": "Dwarka",
+    "bhk": 1,
+    "type": "flat",
+    "tx": "rent",
+    "price": 27500,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "market"
+    ],
+    "sqft": 630,
+    "title": "Executive 1 BHK in Dwarka",
+    "id": "PROP-0044",
+    "photo": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Delhi",
+    "locality": "Dwarka",
+    "bhk": 1,
+    "type": "flat",
+    "tx": "rent",
+    "price": 23000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "market"
+    ],
+    "sqft": 570,
+    "title": "Value 1 BHK at Dwarka",
+    "id": "PROP-0045",
+    "photo": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Delhi",
+    "locality": "Dwarka",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "rent",
+    "price": 38000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "school"
+    ],
+    "sqft": 1500,
+    "title": "Spacious DDA SFS 3 BHK Apartment",
+    "id": "PROP-0046",
+    "photo": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Delhi",
+    "locality": "Dwarka",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "rent",
+    "price": 41800,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "school"
+    ],
+    "sqft": 1575,
+    "title": "Executive 3 BHK in Dwarka",
+    "id": "PROP-0047",
+    "photo": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Delhi",
+    "locality": "Dwarka",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "rent",
+    "price": 34960,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "school"
+    ],
+    "sqft": 1425,
+    "title": "Value 3 BHK at Dwarka",
+    "id": "PROP-0048",
+    "photo": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Delhi",
+    "locality": "Saket",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "buy",
+    "price": 19500000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "hospital",
+      "mall"
+    ],
+    "sqft": 1800,
+    "title": "South Delhi Luxury 3 BHK Builder Floor",
+    "id": "PROP-0049",
+    "photo": "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Delhi",
+    "locality": "Saket",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "buy",
+    "price": 21450000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "hospital",
+      "mall"
+    ],
+    "sqft": 1890,
+    "title": "Executive 3 BHK in Saket",
+    "id": "PROP-0050",
+    "photo": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Delhi",
+    "locality": "Saket",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "buy",
+    "price": 17940000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "hospital",
+      "mall"
+    ],
+    "sqft": 1710,
+    "title": "Value 3 BHK at Saket",
+    "id": "PROP-0051",
+    "photo": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Delhi",
+    "locality": "Vasant Kunj",
+    "bhk": 4,
+    "type": "house",
+    "tx": "buy",
+    "price": 58000000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "mall",
+      "hospital"
+    ],
+    "sqft": 3200,
+    "title": "Grand 4 BHK Independent Kothi Vasant Kunj",
+    "id": "PROP-0052",
+    "photo": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Delhi",
+    "locality": "Vasant Kunj",
+    "bhk": 4,
+    "type": "house",
+    "tx": "buy",
+    "price": 63800000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "mall",
+      "hospital"
+    ],
+    "sqft": 3360,
+    "title": "Executive 4 BHK in Vasant Kunj",
+    "id": "PROP-0053",
+    "photo": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Delhi",
+    "locality": "Vasant Kunj",
+    "bhk": 4,
+    "type": "house",
+    "tx": "buy",
+    "price": 53360000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "mall",
+      "hospital"
+    ],
+    "sqft": 3040,
+    "title": "Value 4 BHK at Vasant Kunj",
+    "id": "PROP-0054",
+    "photo": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Delhi",
+    "locality": "Janakpuri",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 25000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro"
+    ],
+    "sqft": 900,
+    "title": "Fully Furnished 2 BHK in District Centre Janakpuri",
+    "id": "PROP-0055",
+    "photo": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Delhi",
+    "locality": "Janakpuri",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 27500,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro"
+    ],
+    "sqft": 945,
+    "title": "Executive 2 BHK in Janakpuri",
+    "id": "PROP-0056",
+    "photo": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Delhi",
+    "locality": "Janakpuri",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 23000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro"
+    ],
+    "sqft": 855,
+    "title": "Value 2 BHK at Janakpuri",
+    "id": "PROP-0057",
+    "photo": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Delhi",
+    "locality": "Pitampura",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "buy",
+    "price": 15500000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "market"
+    ],
+    "sqft": 1350,
+    "title": "3 BHK Builder Floor near Netaji Subhash Place",
+    "id": "PROP-0058",
+    "photo": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Delhi",
+    "locality": "Pitampura",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "buy",
+    "price": 17050000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "market"
+    ],
+    "sqft": 1417,
+    "title": "Executive 3 BHK in Pitampura",
+    "id": "PROP-0059",
+    "photo": "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Delhi",
+    "locality": "Pitampura",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "buy",
+    "price": 14260000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "market"
+    ],
+    "sqft": 1282,
+    "title": "Value 3 BHK at Pitampura",
+    "id": "PROP-0060",
+    "photo": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Delhi",
+    "locality": "Vikas Puri",
+    "bhk": 1,
+    "type": "house",
+    "tx": "rent",
+    "price": 15000,
+    "furn": "unfurnished",
+    "poss": "ready_to_move",
+    "near": [
+      "market"
+    ],
+    "sqft": 500,
+    "title": "Independent Ground Floor 1 BHK House",
+    "id": "PROP-0061",
+    "photo": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Delhi",
+    "locality": "Vikas Puri",
+    "bhk": 1,
+    "type": "house",
+    "tx": "rent",
+    "price": 16500,
+    "furn": "unfurnished",
+    "poss": "ready_to_move",
+    "near": [
+      "market"
+    ],
+    "sqft": 525,
+    "title": "Executive 1 BHK in Vikas Puri",
+    "id": "PROP-0062",
+    "photo": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Delhi",
+    "locality": "Vikas Puri",
+    "bhk": 1,
+    "type": "house",
+    "tx": "rent",
+    "price": 13800,
+    "furn": "unfurnished",
+    "poss": "ready_to_move",
+    "near": [
+      "market"
+    ],
+    "sqft": 475,
+    "title": "Value 1 BHK at Vikas Puri",
+    "id": "PROP-0063",
+    "photo": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 95000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "sea",
+      "market"
+    ],
+    "sqft": 850,
+    "title": "Scenic 2 BHK Sea Facing Flat in Bandra West",
+    "id": "PROP-0064",
+    "photo": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 104500,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "sea",
+      "market"
+    ],
+    "sqft": 892,
+    "title": "Executive 2 BHK in Bandra West",
+    "id": "PROP-0065",
+    "photo": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 87400,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "sea",
+      "market"
+    ],
+    "sqft": 807,
+    "title": "Value 2 BHK at Bandra West",
+    "id": "PROP-0066",
+    "photo": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "bhk": 4,
+    "type": "flat",
+    "tx": "buy",
+    "price": 75000000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "sea"
+    ],
+    "sqft": 2400,
+    "title": "Bespoke 4 BHK Luxury Apartment Carter Road",
+    "id": "PROP-0067",
+    "photo": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "bhk": 4,
+    "type": "flat",
+    "tx": "buy",
+    "price": 82500000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "sea"
+    ],
+    "sqft": 2520,
+    "title": "Executive 4 BHK in Bandra West",
+    "id": "PROP-0068",
+    "photo": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Mumbai",
+    "locality": "Bandra West",
+    "bhk": 4,
+    "type": "flat",
+    "tx": "buy",
+    "price": 69000000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "sea"
+    ],
+    "sqft": 2280,
+    "title": "Value 4 BHK at Bandra West",
+    "id": "PROP-0069",
+    "photo": "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Mumbai",
+    "locality": "Andheri West",
+    "bhk": 1,
+    "type": "flat",
+    "tx": "rent",
+    "price": 38000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "mall"
+    ],
+    "sqft": 550,
+    "title": "Chic 1 BHK in Lokhandwala Complex",
+    "id": "PROP-0070",
+    "photo": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Mumbai",
+    "locality": "Andheri West",
+    "bhk": 1,
+    "type": "flat",
+    "tx": "rent",
+    "price": 41800,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "mall"
+    ],
+    "sqft": 577,
+    "title": "Executive 1 BHK in Andheri West",
+    "id": "PROP-0071",
+    "photo": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Mumbai",
+    "locality": "Andheri West",
+    "bhk": 1,
+    "type": "flat",
+    "tx": "rent",
+    "price": 34960,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "mall"
+    ],
+    "sqft": 522,
+    "title": "Value 1 BHK at Andheri West",
+    "id": "PROP-0072",
+    "photo": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Mumbai",
+    "locality": "Powai",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 55000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "hospital",
+      "lake"
+    ],
+    "sqft": 950,
+    "title": "Hiranandani Gardens 2 BHK Furnished Flat",
+    "id": "PROP-0073",
+    "photo": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Mumbai",
+    "locality": "Powai",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 60500,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "hospital",
+      "lake"
+    ],
+    "sqft": 997,
+    "title": "Executive 2 BHK in Powai",
+    "id": "PROP-0074",
+    "photo": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Mumbai",
+    "locality": "Powai",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 50600,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "hospital",
+      "lake"
+    ],
+    "sqft": 902,
+    "title": "Value 2 BHK at Powai",
+    "id": "PROP-0075",
+    "photo": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Mumbai",
+    "locality": "Thane",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "buy",
+    "price": 7800000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "highway",
+      "mall"
+    ],
+    "sqft": 800,
+    "title": "Ready to Move 2 BHK in Ghodbunder Road",
+    "id": "PROP-0076",
+    "photo": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Mumbai",
+    "locality": "Thane",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "buy",
+    "price": 8580000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "highway",
+      "mall"
+    ],
+    "sqft": 840,
+    "title": "Executive 2 BHK in Thane",
+    "id": "PROP-0077",
+    "photo": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Mumbai",
+    "locality": "Thane",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "buy",
+    "price": 7176000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "highway",
+      "mall"
+    ],
+    "sqft": 760,
+    "title": "Value 2 BHK at Thane",
+    "id": "PROP-0078",
+    "photo": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Mumbai",
+    "locality": "Borivali",
+    "bhk": 1,
+    "type": "flat",
+    "tx": "rent",
+    "price": 24000,
+    "furn": "unfurnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "station"
+    ],
+    "sqft": 520,
+    "title": "Ventilated 1 BHK Flat near Borivali Station",
+    "id": "PROP-0079",
+    "photo": "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Mumbai",
+    "locality": "Borivali",
+    "bhk": 1,
+    "type": "flat",
+    "tx": "rent",
+    "price": 26400,
+    "furn": "unfurnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "station"
+    ],
+    "sqft": 546,
+    "title": "Executive 1 BHK in Borivali",
+    "id": "PROP-0080",
+    "photo": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Mumbai",
+    "locality": "Borivali",
+    "bhk": 1,
+    "type": "flat",
+    "tx": "rent",
+    "price": 22080,
+    "furn": "unfurnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "station"
+    ],
+    "sqft": 494,
+    "title": "Value 1 BHK at Borivali",
+    "id": "PROP-0081",
+    "photo": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Mumbai",
+    "locality": "Goregaon East",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 38000,
+    "furn": "unfurnished",
+    "poss": "ready_to_move",
+    "near": [
+      "highway",
+      "mall"
+    ],
+    "sqft": 850,
+    "title": "Contemporary 2 BHK Flat near Oberoi Mall",
+    "id": "PROP-0082",
+    "photo": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Mumbai",
+    "locality": "Goregaon East",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 41800,
+    "furn": "unfurnished",
+    "poss": "ready_to_move",
+    "near": [
+      "highway",
+      "mall"
+    ],
+    "sqft": 892,
+    "title": "Executive 2 BHK in Goregaon East",
+    "id": "PROP-0083",
+    "photo": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Mumbai",
+    "locality": "Goregaon East",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 34960,
+    "furn": "unfurnished",
+    "poss": "ready_to_move",
+    "near": [
+      "highway",
+      "mall"
+    ],
+    "sqft": 807,
+    "title": "Value 2 BHK at Goregaon East",
+    "id": "PROP-0084",
+    "photo": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Mumbai",
+    "locality": "Vashi",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "buy",
+    "price": 8800000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "station"
+    ],
+    "sqft": 900,
+    "title": "Prime Sector 17 Vashi 2 BHK Apartment",
+    "id": "PROP-0085",
+    "photo": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Mumbai",
+    "locality": "Vashi",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "buy",
+    "price": 9680000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "station"
+    ],
+    "sqft": 945,
+    "title": "Executive 2 BHK in Vashi",
+    "id": "PROP-0086",
+    "photo": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Mumbai",
+    "locality": "Vashi",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "buy",
+    "price": 8096000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "station"
+    ],
+    "sqft": 855,
+    "title": "Value 2 BHK at Vashi",
+    "id": "PROP-0087",
+    "photo": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Bengaluru",
+    "locality": "Whitefield",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 30000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "market"
+    ],
+    "sqft": 1150,
+    "title": "Gated 2 BHK Flat near ITPL & Metro",
+    "id": "PROP-0088",
+    "photo": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Bengaluru",
+    "locality": "Whitefield",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 33000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "market"
+    ],
+    "sqft": 1207,
+    "title": "Executive 2 BHK in Whitefield",
+    "id": "PROP-0089",
+    "photo": "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Bengaluru",
+    "locality": "Whitefield",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 27600,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "market"
+    ],
+    "sqft": 1092,
+    "title": "Value 2 BHK at Whitefield",
+    "id": "PROP-0090",
+    "photo": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Bengaluru",
+    "locality": "Whitefield",
+    "bhk": 1,
+    "type": "flat",
+    "tx": "rent",
+    "price": 25000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "tech park"
+    ],
+    "sqft": 650,
+    "title": "1 BHK Modern Apartment for IT Professionals",
+    "id": "PROP-0091",
+    "photo": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Bengaluru",
+    "locality": "Whitefield",
+    "bhk": 1,
+    "type": "flat",
+    "tx": "rent",
+    "price": 27500,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "tech park"
+    ],
+    "sqft": 682,
+    "title": "Executive 1 BHK in Whitefield",
+    "id": "PROP-0092",
+    "photo": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Bengaluru",
+    "locality": "Whitefield",
+    "bhk": 1,
+    "type": "flat",
+    "tx": "rent",
+    "price": 23000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "tech park"
+    ],
+    "sqft": 617,
+    "title": "Value 1 BHK at Whitefield",
+    "id": "PROP-0093",
+    "photo": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Bengaluru",
+    "locality": "Koramangala",
+    "bhk": 1,
+    "type": "flat",
+    "tx": "rent",
+    "price": 34000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "market",
+      "mall"
+    ],
+    "sqft": 700,
+    "title": "Trendy 1 BHK Studio in 4th Block Koramangala",
+    "id": "PROP-0094",
+    "photo": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Bengaluru",
+    "locality": "Koramangala",
+    "bhk": 1,
+    "type": "flat",
+    "tx": "rent",
+    "price": 37400,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "market",
+      "mall"
+    ],
+    "sqft": 735,
+    "title": "Executive 1 BHK in Koramangala",
+    "id": "PROP-0095",
+    "photo": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Bengaluru",
+    "locality": "Koramangala",
+    "bhk": 1,
+    "type": "flat",
+    "tx": "rent",
+    "price": 31280,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "market",
+      "mall"
+    ],
+    "sqft": 665,
+    "title": "Value 1 BHK at Koramangala",
+    "id": "PROP-0096",
+    "photo": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Bengaluru",
+    "locality": "Indiranagar",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "rent",
+    "price": 68000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro"
+    ],
+    "sqft": 1800,
+    "title": "Boutique 3 BHK Apartment off 100ft Road",
+    "id": "PROP-0097",
+    "photo": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Bengaluru",
+    "locality": "Indiranagar",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "rent",
+    "price": 74800,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro"
+    ],
+    "sqft": 1890,
+    "title": "Executive 3 BHK in Indiranagar",
+    "id": "PROP-0098",
+    "photo": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Bengaluru",
+    "locality": "Indiranagar",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "rent",
+    "price": 62560,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro"
+    ],
+    "sqft": 1710,
+    "title": "Value 3 BHK at Indiranagar",
+    "id": "PROP-0099",
+    "photo": "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Bengaluru",
+    "locality": "Electronic City",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "buy",
+    "price": 7200000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "highway"
+    ],
+    "sqft": 1450,
+    "title": "Spacious 3 BHK Flat in Electronic City Phase 1",
+    "id": "PROP-0100",
+    "photo": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Bengaluru",
+    "locality": "Electronic City",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "buy",
+    "price": 7920000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "highway"
+    ],
+    "sqft": 1522,
+    "title": "Executive 3 BHK in Electronic City",
+    "id": "PROP-0101",
+    "photo": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Bengaluru",
+    "locality": "Electronic City",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "buy",
+    "price": 6624000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "highway"
+    ],
+    "sqft": 1377,
+    "title": "Value 3 BHK at Electronic City",
+    "id": "PROP-0102",
+    "photo": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Bengaluru",
+    "locality": "Bellandur",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 35000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "tech park"
+    ],
+    "sqft": 1200,
+    "title": "2 BHK Flat near EcoSpace & Outer Ring Road",
+    "id": "PROP-0103",
+    "photo": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Bengaluru",
+    "locality": "Bellandur",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 38500,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "tech park"
+    ],
+    "sqft": 1260,
+    "title": "Executive 2 BHK in Bellandur",
+    "id": "PROP-0104",
+    "photo": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Bengaluru",
+    "locality": "Bellandur",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 32200,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "tech park"
+    ],
+    "sqft": 1140,
+    "title": "Value 2 BHK at Bellandur",
+    "id": "PROP-0105",
+    "photo": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Bengaluru",
+    "locality": "Sarjapur Road",
+    "bhk": 4,
+    "type": "villa",
+    "tx": "buy",
+    "price": 35000000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "school"
+    ],
+    "sqft": 3600,
+    "title": "Exclusive Gated Villa with Private Garden",
+    "id": "PROP-0106",
+    "photo": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Bengaluru",
+    "locality": "Sarjapur Road",
+    "bhk": 4,
+    "type": "villa",
+    "tx": "buy",
+    "price": 38500000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "school"
+    ],
+    "sqft": 3780,
+    "title": "Executive 4 BHK in Sarjapur Road",
+    "id": "PROP-0107",
+    "photo": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Bengaluru",
+    "locality": "Sarjapur Road",
+    "bhk": 4,
+    "type": "villa",
+    "tx": "buy",
+    "price": 32200000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "school"
+    ],
+    "sqft": 3420,
+    "title": "Value 4 BHK at Sarjapur Road",
+    "id": "PROP-0108",
+    "photo": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Pune",
+    "locality": "Hinjewadi",
+    "bhk": 1,
+    "type": "flat",
+    "tx": "rent",
+    "price": 16000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "market"
+    ],
+    "sqft": 600,
+    "title": "1 BHK Apartment in Phase 1 Hinjewadi",
+    "id": "PROP-0109",
+    "photo": "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Pune",
+    "locality": "Hinjewadi",
+    "bhk": 1,
+    "type": "flat",
+    "tx": "rent",
+    "price": 17600,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "market"
+    ],
+    "sqft": 630,
+    "title": "Executive 1 BHK in Hinjewadi",
+    "id": "PROP-0110",
+    "photo": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Pune",
+    "locality": "Hinjewadi",
+    "bhk": 1,
+    "type": "flat",
+    "tx": "rent",
+    "price": 14720,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "market"
+    ],
+    "sqft": 570,
+    "title": "Value 1 BHK at Hinjewadi",
+    "id": "PROP-0111",
+    "photo": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Pune",
+    "locality": "Wakad",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 22000,
+    "furn": "unfurnished",
+    "poss": "ready_to_move",
+    "near": [
+      "school"
+    ],
+    "sqft": 950,
+    "title": "Bright 2 BHK Flat close to Mumbai Highway",
+    "id": "PROP-0112",
+    "photo": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Pune",
+    "locality": "Wakad",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 24200,
+    "furn": "unfurnished",
+    "poss": "ready_to_move",
+    "near": [
+      "school"
+    ],
+    "sqft": 997,
+    "title": "Executive 2 BHK in Wakad",
+    "id": "PROP-0113",
+    "photo": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Pune",
+    "locality": "Wakad",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 20240,
+    "furn": "unfurnished",
+    "poss": "ready_to_move",
+    "near": [
+      "school"
+    ],
+    "sqft": 902,
+    "title": "Value 2 BHK at Wakad",
+    "id": "PROP-0114",
+    "photo": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Pune",
+    "locality": "Baner",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "buy",
+    "price": 17500000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "highway",
+      "mall"
+    ],
+    "sqft": 1600,
+    "title": "High-End 3 BHK with Valley View in Baner",
+    "id": "PROP-0115",
+    "photo": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Pune",
+    "locality": "Baner",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "buy",
+    "price": 19250000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "highway",
+      "mall"
+    ],
+    "sqft": 1680,
+    "title": "Executive 3 BHK in Baner",
+    "id": "PROP-0116",
+    "photo": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Pune",
+    "locality": "Baner",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "buy",
+    "price": 16100000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "highway",
+      "mall"
+    ],
+    "sqft": 1520,
+    "title": "Value 3 BHK at Baner",
+    "id": "PROP-0117",
+    "photo": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Pune",
+    "locality": "Kothrud",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "buy",
+    "price": 7400000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "metro"
+    ],
+    "sqft": 920,
+    "title": "Peaceful 2 BHK in Heart of Kothrud",
+    "id": "PROP-0118",
+    "photo": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Pune",
+    "locality": "Kothrud",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "buy",
+    "price": 8140000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "metro"
+    ],
+    "sqft": 966,
+    "title": "Executive 2 BHK in Kothrud",
+    "id": "PROP-0119",
+    "photo": "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Pune",
+    "locality": "Kothrud",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "buy",
+    "price": 6808000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "metro"
+    ],
+    "sqft": 874,
+    "title": "Value 2 BHK at Kothrud",
+    "id": "PROP-0120",
+    "photo": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Pune",
+    "locality": "Viman Nagar",
+    "bhk": 1,
+    "type": "flat",
+    "tx": "rent",
+    "price": 20000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "airport",
+      "mall"
+    ],
+    "sqft": 650,
+    "title": "Furnished 1 BHK close to Phoenix Marketcity",
+    "id": "PROP-0121",
+    "photo": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Pune",
+    "locality": "Viman Nagar",
+    "bhk": 1,
+    "type": "flat",
+    "tx": "rent",
+    "price": 22000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "airport",
+      "mall"
+    ],
+    "sqft": 682,
+    "title": "Executive 1 BHK in Viman Nagar",
+    "id": "PROP-0122",
+    "photo": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Pune",
+    "locality": "Magarpatta City",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 26000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "tech park",
+      "school"
+    ],
+    "sqft": 1050,
+    "title": "Township 2 BHK Flat in Magarpatta City",
+    "id": "PROP-0123",
+    "photo": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Pune",
+    "locality": "Magarpatta City",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 28600,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "tech park",
+      "school"
+    ],
+    "sqft": 1102,
+    "title": "Executive 2 BHK in Magarpatta City",
+    "id": "PROP-0124",
+    "photo": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Hyderabad",
+    "locality": "Gachibowli",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "buy",
+    "price": 12000000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "tech park"
+    ],
+    "sqft": 1700,
+    "title": "Modern 3 BHK in Financial District",
+    "id": "PROP-0125",
+    "photo": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Hyderabad",
+    "locality": "Gachibowli",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "buy",
+    "price": 13200000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "tech park"
+    ],
+    "sqft": 1785,
+    "title": "Executive 3 BHK in Gachibowli",
+    "id": "PROP-0126",
+    "photo": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Hyderabad",
+    "locality": "Madhapur",
+    "bhk": 1,
+    "type": "pg",
+    "tx": "rent",
+    "price": 9500,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro"
+    ],
+    "sqft": 250,
+    "title": "Premium AC Paying Guest Stay with Food",
+    "id": "PROP-0127",
+    "photo": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Hyderabad",
+    "locality": "Madhapur",
+    "bhk": 1,
+    "type": "pg",
+    "tx": "rent",
+    "price": 10450,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro"
+    ],
+    "sqft": 262,
+    "title": "Executive 1 BHK in Madhapur",
+    "id": "PROP-0128",
+    "photo": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Hyderabad",
+    "locality": "Kondapur",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 28000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "hospital",
+      "market"
+    ],
+    "sqft": 1100,
+    "title": "Spacious 2 BHK close to Botanical Garden",
+    "id": "PROP-0129",
+    "photo": "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Hyderabad",
+    "locality": "Kondapur",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 30800,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "hospital",
+      "market"
+    ],
+    "sqft": 1155,
+    "title": "Executive 2 BHK in Kondapur",
+    "id": "PROP-0130",
+    "photo": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Hyderabad",
+    "locality": "Kukatpally",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "buy",
+    "price": 6200000,
+    "furn": "unfurnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro"
+    ],
+    "sqft": 1150,
+    "title": "Affordable 2 BHK Flat near JNTU",
+    "id": "PROP-0131",
+    "photo": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Hyderabad",
+    "locality": "Kukatpally",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "buy",
+    "price": 6820000,
+    "furn": "unfurnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro"
+    ],
+    "sqft": 1207,
+    "title": "Executive 2 BHK in Kukatpally",
+    "id": "PROP-0132",
+    "photo": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Hyderabad",
+    "locality": "Jubilee Hills",
+    "bhk": 4,
+    "type": "villa",
+    "tx": "buy",
+    "price": 98000000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "park"
+    ],
+    "sqft": 5200,
+    "title": "Regal 4 BHK Designer Villa on Road 36",
+    "id": "PROP-0133",
+    "photo": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Hyderabad",
+    "locality": "Jubilee Hills",
+    "bhk": 4,
+    "type": "villa",
+    "tx": "buy",
+    "price": 107800000,
+    "furn": "furnished",
+    "poss": "ready_to_move",
+    "near": [
+      "park"
+    ],
+    "sqft": 5460,
+    "title": "Executive 4 BHK in Jubilee Hills",
+    "id": "PROP-0134",
+    "photo": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Chennai",
+    "locality": "Velachery",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 22000,
+    "furn": "unfurnished",
+    "poss": "ready_to_move",
+    "near": [
+      "mall",
+      "station"
+    ],
+    "sqft": 900,
+    "title": "Residential 2 BHK Flat in Velachery",
+    "id": "PROP-0135",
+    "photo": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Chennai",
+    "locality": "Velachery",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 24200,
+    "furn": "unfurnished",
+    "poss": "ready_to_move",
+    "near": [
+      "mall",
+      "station"
+    ],
+    "sqft": 945,
+    "title": "Executive 2 BHK in Velachery",
+    "id": "PROP-0136",
+    "photo": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Chennai",
+    "locality": "Anna Nagar",
+    "bhk": 3,
+    "type": "house",
+    "tx": "buy",
+    "price": 21500000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "school"
+    ],
+    "sqft": 2100,
+    "title": "Independent 3 BHK House with Car Parking",
+    "id": "PROP-0137",
+    "photo": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Chennai",
+    "locality": "Anna Nagar",
+    "bhk": 3,
+    "type": "house",
+    "tx": "buy",
+    "price": 23650000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "school"
+    ],
+    "sqft": 2205,
+    "title": "Executive 3 BHK in Anna Nagar",
+    "id": "PROP-0138",
+    "photo": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Chennai",
+    "locality": "Thoraipakkam",
+    "bhk": 1,
+    "type": "flat",
+    "tx": "rent",
+    "price": 14000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "highway"
+    ],
+    "sqft": 550,
+    "title": "Compact 1 BHK on OMR IT Corridor",
+    "id": "PROP-0139",
+    "photo": "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Chennai",
+    "locality": "Thoraipakkam",
+    "bhk": 1,
+    "type": "flat",
+    "tx": "rent",
+    "price": 15400,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "highway"
+    ],
+    "sqft": 577,
+    "title": "Executive 1 BHK in Thoraipakkam",
+    "id": "PROP-0140",
+    "photo": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Kolkata",
+    "locality": "Salt Lake",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "buy",
+    "price": 3500000,
+    "furn": "unfurnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "market"
+    ],
+    "sqft": 850,
+    "title": "Affordable 2 BHK Flat Sector 1 Salt Lake",
+    "id": "PROP-0141",
+    "photo": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Kolkata",
+    "locality": "Salt Lake",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "buy",
+    "price": 3850000,
+    "furn": "unfurnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro",
+      "market"
+    ],
+    "sqft": 892,
+    "title": "Executive 2 BHK in Salt Lake",
+    "id": "PROP-0142",
+    "photo": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Kolkata",
+    "locality": "New Town",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "buy",
+    "price": 6800000,
+    "furn": "semi",
+    "poss": "under_construction",
+    "near": [
+      "mall"
+    ],
+    "sqft": 1400,
+    "title": "Smart City 3 BHK High-Rise in Action Area 2",
+    "id": "PROP-0143",
+    "photo": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Kolkata",
+    "locality": "New Town",
+    "bhk": 3,
+    "type": "flat",
+    "tx": "buy",
+    "price": 7480000,
+    "furn": "semi",
+    "poss": "under_construction",
+    "near": [
+      "mall"
+    ],
+    "sqft": 1470,
+    "title": "Executive 3 BHK in New Town",
+    "id": "PROP-0144",
+    "photo": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Kolkata",
+    "locality": "Howrah",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 11000,
+    "furn": "unfurnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro"
+    ],
+    "sqft": 750,
+    "title": "Budget 2 BHK Flat near Nabanna",
+    "id": "PROP-0145",
+    "photo": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Kolkata",
+    "locality": "Howrah",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "rent",
+    "price": 12100,
+    "furn": "unfurnished",
+    "poss": "ready_to_move",
+    "near": [
+      "metro"
+    ],
+    "sqft": 787,
+    "title": "Executive 2 BHK in Howrah",
+    "id": "PROP-0146",
+    "photo": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Kolkata",
+    "locality": "Tollygunge",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "buy",
+    "price": 4400000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "metro"
+    ],
+    "sqft": 900,
+    "title": "South Kolkata 2 BHK Flat near Mahanayak Uttam Kumar Metro",
+    "id": "PROP-0147",
+    "photo": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "city": "Kolkata",
+    "locality": "Tollygunge",
+    "bhk": 2,
+    "type": "flat",
+    "tx": "buy",
+    "price": 4840000,
+    "furn": "semi",
+    "poss": "ready_to_move",
+    "near": [
+      "metro"
+    ],
+    "sqft": 945,
+    "title": "Executive 2 BHK in Tollygunge",
+    "id": "PROP-0148",
+    "photo": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=600&auto=format&fit=crop&q=80"
+  }
+]
