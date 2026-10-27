@@ -1,0 +1,94 @@
+import re
+from typing import Any
+
+
+def clean_text(text: str) -> str:
+    """Normalize whitespace and lowercase the query string."""
+    return " ".join(text.lower().strip().split())
+
+
+def parse_currency_amount(amount: str | float, unit: str, units_map: dict[str, int]) -> int:
+    """Convert a numeric amount and unit into an integer INR value."""
+    multiplier = units_map.get(unit.lower().strip(), 1)
+    val = float(amount) * multiplier
+    return int(round(val))
+
+
+def normalize_city(city_raw: str, aliases: dict[str, str]) -> str:
+    """Map raw city text to its canonical name using alias dictionary."""
+    clean = city_raw.lower().strip()
+    return aliases.get(clean, city_raw.title().strip())
+
+
+def extract_bhk(text: str) -> int | None:
+    """Extract BHK bedroom count from query text."""
+    match = re.search(r"\b(\d+)\s*(?:bhk|bedroom|bed|rk)\b", text, re.IGNORECASE)
+    return int(match.group(1)) if match else None
+
+
+def extract_budget(text: str, units_map: dict[str, int]) -> tuple[int | None, int | None]:
+    """
+    Extract budget_min and budget_max from text based on keywords and unit multipliers.
+    Returns (budget_min, budget_max).
+    """
+    unit_pattern = r"(?:cr|crore|crores|lakh|lakhs|lac|lacs|l|k|thousand|hazar)"
+
+    # Range with two units: e.g. "40 lakh to 50 lakh" or "25k - 30k"
+    range_match_full = re.search(
+        rf"(\d+(?:\.\d+)?)\s*({unit_pattern})\s*(?:to|-|se)\s*(\d+(?:\.\d+)?)\s*({unit_pattern})",
+        text,
+        re.IGNORECASE,
+    )
+    if range_match_full:
+        low_val, low_unit, high_val, high_unit = range_match_full.groups()
+        b_min = parse_currency_amount(low_val, low_unit, units_map)
+        b_max = parse_currency_amount(high_val, high_unit, units_map)
+        return (min(b_min, b_max), max(b_min, b_max))
+
+    # Shared unit range: e.g. "5-8 cr" or "25 to 30k"
+    range_match_shared = re.search(
+        rf"(\d+(?:\.\d+)?)\s*(?:to|-|se)\s*(\d+(?:\.\d+)?)\s*({unit_pattern})",
+        text,
+        re.IGNORECASE,
+    )
+    if range_match_shared:
+        low_val, high_val, unit = range_match_shared.groups()
+        b_min = parse_currency_amount(low_val, unit, units_map)
+        b_max = parse_currency_amount(high_val, unit, units_map)
+        return (min(b_min, b_max), max(b_min, b_max))
+
+    # Upper bound: "1.5 cr tak", "under 25k", "max 50 lakh", "below 30k"
+    upper_match = re.search(
+        rf"(?:under|below|max|upto|up to)\s*(\d+(?:\.\d+)?)\s*({unit_pattern})|"
+        rf"(\d+(?:\.\d+)?)\s*({unit_pattern})\s*(?:tak|max)",
+        text,
+        re.IGNORECASE,
+    )
+    if upper_match:
+        val = upper_match.group(1) or upper_match.group(3)
+        unit = upper_match.group(2) or upper_match.group(4)
+        return (None, parse_currency_amount(val, unit, units_map))
+
+    # Lower bound: "starting 50 lakh", "above 25k", "min 1 cr"
+    lower_match = re.search(
+        rf"(?:starting|above|min|minimum)\s*(\d+(?:\.\d+)?)\s*({unit_pattern})|"
+        rf"(\d+(?:\.\d+)?)\s*({unit_pattern})\s*(?:plus|\+)",
+        text,
+        re.IGNORECASE,
+    )
+    if lower_match:
+        val = lower_match.group(1) or lower_match.group(3)
+        unit = lower_match.group(2) or lower_match.group(4)
+        return (parse_currency_amount(val, unit, units_map), None)
+
+    # Single unqualified amount: e.g. "budget 25k", "25k rent", "1.5 cr flat"
+    single_match = re.search(
+        rf"(?:budget\s*)?(\d+(?:\.\d+)?)\s*({unit_pattern})",
+        text,
+        re.IGNORECASE,
+    )
+    if single_match:
+        val, unit = single_match.groups()
+        return (None, parse_currency_amount(val, unit, units_map))
+
+    return (None, None)

@@ -1,0 +1,113 @@
+# Real Estate Domain Configuration
+domain: "real_estate"
+
+# Pydantic schema field definitions
+schema:
+  city: "string"
+  locality: "string"
+  bhk: "integer"
+  property_type: ["flat", "house", "plot", "villa", "pg"]
+  transaction: ["buy", "rent"]
+  budget_min: "integer"
+  budget_max: "integer"
+  furnishing: ["furnished", "semi", "unfurnished"]
+  possession: ["ready_to_move", "under_construction"]
+  area_sqft_min: "integer"
+  area_sqft_max: "integer"
+  near: "list_of_strings"
+  price_preference: ["cheap", "premium", "none"]
+
+# Currency unit multipliers (INR)
+units:
+  k: 1000
+  thousand: 1000
+  hazar: 1000
+  lakh: 100000
+  lakhs: 100000
+  lac: 100000
+  lacs: 100000
+  l: 100000
+  crore: 10000000
+  crores: 10000000
+  cr: 10000000
+
+# Canonical city names and aliases
+city_aliases:
+  gurgaon: "Gurugram"
+  gurugram: "Gurugram"
+  noida: "Noida"
+  greater noida: "Greater Noida"
+  delhi: "Delhi"
+  new delhi: "Delhi"
+  bombay: "Mumbai"
+  mumbai: "Mumbai"
+  bangalore: "Bengaluru"
+  bengaluru: "Bengaluru"
+  calcutta: "Kolkata"
+  kolkata: "Kolkata"
+  madras: "Chennai"
+  chennai: "Chennai"
+  hyderabad: "Hyderabad"
+  pune: "Pune"
+
+# Keyword to canonical category mappings
+keywords:
+  property_type:
+    flat: "flat"
+    apartment: "flat"
+    apt: "flat"
+    builder floor: "flat"
+    house: "house"
+    independent house: "house"
+    kothi: "house"
+    villa: "villa"
+    plot: "plot"
+    land: "plot"
+    pg: "pg"
+    paying guest: "pg"
+    hostel: "pg"
+
+  transaction:
+    rent: "rent"
+    kiraya: "rent"
+    on rent: "rent"
+    buy: "buy"
+    purchase: "buy"
+    sale: "buy"
+    kharidna: "buy"
+
+  furnishing:
+    furnished: "furnished"
+    fully furnished: "furnished"
+    semi furnished: "semi"
+    semi: "semi"
+    unfurnished: "unfurnished"
+
+  possession:
+    ready to move: "ready_to_move"
+    ready: "ready_to_move"
+    rtm: "ready_to_move"
+    under construction: "under_construction"
+    uc: "under_construction"
+
+  price_preference:
+    sasta: "cheap"
+    cheap: "cheap"
+    low budget: "cheap"
+    affordable: "cheap"
+    budget: "cheap"
+    luxury: "premium"
+    premium: "premium"
+    posh: "premium"
+    mehenga: "premium"
+
+  near_amenities:
+    metro: "metro"
+    metro station: "metro"
+    station: "metro"
+    school: "school"
+    hospital: "hospital"
+    mall: "mall"
+    market: "market"
+    highway: "highway"
+    expressway: "highway"
