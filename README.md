@@ -39,8 +39,8 @@ flowchart TD
 - Real estate domain configuration in `configs/real_estate.yaml` with city aliases, unit multipliers, and category mappings.
 - Pydantic schema with numeric range validation in `src/schema.py`.
 - Hinglish text, unit, and alias normalizer in `src/normalizer.py`.
-- Annotation standard for ambiguous cases in `data/labeling_guide.md`.
-- Interactive exploration notebook in `notebooks/01_config_and_normalizer.ipynb`.
+- Annotation standard for ambiguous cases in `Data/labeling_guide.md`.
+- Interactive exploration notebook in `Notebooks/01_config_and_normalizer.ipynb`.
 - Unit test suite passing 11 tests across config and normalizer modules.
 
 ### Planned
@@ -62,9 +62,9 @@ AI-1/
 ├── configs/
 │   ├── prices.yaml
 │   └── real_estate.yaml
-├── data/
+├── Data/
 │   └── labeling_guide.md
-├── notebooks/
+├── Notebooks/
 │   └── 01_config_and_normalizer.ipynb
 ├── src/
 │   ├── __init__.py
@@ -87,7 +87,7 @@ AI-1/
 ## Roadmap
 
 - **Baselines and Evaluation Harness:** Implement B1 (rule/regex parser), B2 (cheap model), and B3 (large model) with field-level F1, exact match, JSON validity, latency, and cost calculations.
-- **Dataset Creation:** Hand-write and label DEV (~60 queries) and TEST (~140 queries) sets following `data/labeling_guide.md`.
+- **Dataset Creation:** Hand-write and label DEV (~60 queries) and TEST (~140 queries) sets following `Data/labeling_guide.md`.
 - **Pilot Evaluation:** Measure input, reasoning, and completion tokens on the DEV set to calibrate the cost target.
 - **Model Cascade:** Build Tier 1 routing with fallback to Tier 2 based on Pydantic validation and regex agreement on key fields (`bhk`, `budget_max`, `city`).
 - **Query Caching:** Implement exact-match caching and semantic caching with numeric consistency guards.
