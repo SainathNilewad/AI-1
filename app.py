@@ -19,7 +19,14 @@ if "query_count" not in st.session_state:
 if "current_query" not in st.session_state:
     st.session_state.current_query = "noida me 2bhk sasta near metro"
 
-api_key = st.secrets.get("GROQ_API_KEY", os.getenv("GROQ_API_KEY", ""))
+def _resolve_api_key() -> str:
+    try:
+        return str(st.secrets.get("GROQ_API_KEY", os.getenv("GROQ_API_KEY", "")))
+    except Exception:  # noqa: BLE001
+        return os.getenv("GROQ_API_KEY", "")
+
+
+api_key = _resolve_api_key()
 
 # 3. Clickable Example Queries
 EXAMPLES = [
