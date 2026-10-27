@@ -1,0 +1,261 @@
+{
+  "dataset": "Data/dev.jsonl",
+  "num_queries": 4,
+  "systems": {
+    "b1_rules": {
+      "micro_f1": 77.42,
+      "macro_f1": 50.0,
+      "exact_match_accuracy": 0.0,
+      "latency_p50_ms": 5.42,
+      "latency_p95_ms": 7.69,
+      "total_cost_usd": 0.0,
+      "cost_per_1k_queries": 0.0,
+      "escalation_rate_pct": 0.0,
+      "field_metrics": {
+        "city": {
+          "precision": 100.0,
+          "recall": 100.0,
+          "f1": 100.0
+        },
+        "locality": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "bhk": {
+          "precision": 100.0,
+          "recall": 100.0,
+          "f1": 100.0
+        },
+        "property_type": {
+          "precision": 100.0,
+          "recall": 100.0,
+          "f1": 100.0
+        },
+        "transaction": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "budget_min": {
+          "precision": 100.0,
+          "recall": 100.0,
+          "f1": 100.0
+        },
+        "budget_max": {
+          "precision": 100.0,
+          "recall": 100.0,
+          "f1": 100.0
+        },
+        "furnishing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "possession": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "price_preference": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "b2_cheap": {
+      "micro_f1": 77.42,
+      "macro_f1": 50.0,
+      "exact_match_accuracy": 0.0,
+      "latency_p50_ms": 6.89,
+      "latency_p95_ms": 7.1,
+      "total_cost_usd": 0.0,
+      "cost_per_1k_queries": 0.0,
+      "escalation_rate_pct": 0.0,
+      "field_metrics": {
+        "city": {
+          "precision": 100.0,
+          "recall": 100.0,
+          "f1": 100.0
+        },
+        "locality": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "bhk": {
+          "precision": 100.0,
+          "recall": 100.0,
+          "f1": 100.0
+        },
+        "property_type": {
+          "precision": 100.0,
+          "recall": 100.0,
+          "f1": 100.0
+        },
+        "transaction": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "budget_min": {
+          "precision": 100.0,
+          "recall": 100.0,
+          "f1": 100.0
+        },
+        "budget_max": {
+          "precision": 100.0,
+          "recall": 100.0,
+          "f1": 100.0
+        },
+        "furnishing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "possession": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "price_preference": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "b3_large": {
+      "micro_f1": 77.42,
+      "macro_f1": 50.0,
+      "exact_match_accuracy": 0.0,
+      "latency_p50_ms": 5.48,
+      "latency_p95_ms": 6.95,
+      "total_cost_usd": 0.0,
+      "cost_per_1k_queries": 0.0,
+      "escalation_rate_pct": 0.0,
+      "field_metrics": {
+        "city": {
+          "precision": 100.0,
+          "recall": 100.0,
+          "f1": 100.0
+        },
+        "locality": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "bhk": {
+          "precision": 100.0,
+          "recall": 100.0,
+          "f1": 100.0
+        },
+        "property_type": {
+          "precision": 100.0,
+          "recall": 100.0,
+          "f1": 100.0
+        },
+        "transaction": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "budget_min": {
+          "precision": 100.0,
+          "recall": 100.0,
+          "f1": 100.0
+        },
+        "budget_max": {
+          "precision": 100.0,
+          "recall": 100.0,
+          "f1": 100.0
+        },
+        "furnishing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "possession": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "price_preference": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "cascade": {
+      "micro_f1": 77.42,
+      "macro_f1": 50.0,
+      "exact_match_accuracy": 0.0,
+      "latency_p50_ms": 4.95,
+      "latency_p95_ms": 5.97,
+      "total_cost_usd": 0.0,
+      "cost_per_1k_queries": 0.0,
+      "escalation_rate_pct": 0.0,
+      "field_metrics": {
+        "city": {
+          "precision": 100.0,
+          "recall": 100.0,
+          "f1": 100.0
+        },
+        "locality": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "bhk": {
+          "precision": 100.0,
+          "recall": 100.0,
+          "f1": 100.0
+        },
+        "property_type": {
+          "precision": 100.0,
+          "recall": 100.0,
+          "f1": 100.0
+        },
+        "transaction": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "budget_min": {
+          "precision": 100.0,
+          "recall": 100.0,
+          "f1": 100.0
+        },
+        "budget_max": {
+          "precision": 100.0,
+          "recall": 100.0,
+          "f1": 100.0
+        },
+        "furnishing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "possession": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "price_preference": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    }
+  },
+  "hypothesis_test_cascade_vs_b3": {
+    "num_bootstrap": 1000,
+    "mean_diff": 0.0,
+    "ci_95_lower": 0.0,
+    "ci_95_upper": 0.0,
+    "passes_preregistered_margin": true
+  }
+}

@@ -1,0 +1,4 @@
+{"query": "noida me 2bhk sasta near metro", "gold": {"city": "Noida", "bhk": 2, "price_preference": "cheap", "near": ["metro"]}}
+{"query": "gurgaon 3 bhk ready to move 1.5 cr tak", "gold": {"city": "Gurugram", "bhk": 3, "possession": "ready_to_move", "budget_max": 15000000}}
+{"query": "furnished 1bhk rent dwarka 25k", "gold": {"locality": "Dwarka", "bhk": 1, "transaction": "rent", "furnishing": "furnished", "budget_max": 25000}}
+{"query": "4bhk luxury villa buy in bangalore 5-8 cr", "gold": {"city": "Bengaluru", "bhk": 4, "property_type": "villa", "transaction": "buy", "price_preference": "premium", "budget_min": 50000000, "budget_max": 80000000}}
