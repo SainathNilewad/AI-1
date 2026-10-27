@@ -68,3 +68,20 @@ def test_schema_valid_query():
 def test_schema_invalid_range_raises():
     with pytest.raises(ValueError, match="budget_min"):
         RealEstateQuery(budget_min=20000000, budget_max=10000000)
+
+
+def test_extract_regex_candidates_full():
+    from src.normalizer import extract_regex_candidates
+
+    text = "noida sec 62 me 2bhk sasta furnished flat rent pe near metro 30k tak"
+    extracted = extract_regex_candidates(text)
+    assert extracted["city"] == "Noida"
+    assert extracted["locality"] == "Sector 62"
+    assert extracted["bhk"] == 2
+    assert extracted["price_preference"] == "cheap"
+    assert extracted["furnishing"] == "furnished"
+    assert extracted["property_type"] == "flat"
+    assert extracted["transaction"] == "rent"
+    assert "metro" in extracted["near"]
+    assert extracted["budget_max"] == 30000
+

@@ -1,5 +1,6 @@
 """Hinglish Query Understanding Engine - Streamlit Interactive App."""
 
+import json
 import os
 
 import streamlit as st
@@ -8,9 +9,9 @@ from src.baselines import parse_b1, parse_b2, parse_b3, parse_cascade
 from src.config import PROJECT_ROOT
 
 # 1. Page Configuration & Header
-st.set_page_config(page_title="Hinglish Query Parser", layout="wide")
-st.title("Hinglish Real Estate Query Parser")
-st.caption("Converts colloquial Hinglish search queries into validated structured JSON filters.")
+st.set_page_config(page_title="Hinglish Real Estate Query Parser", page_icon="🏠", layout="wide")
+st.title("🏠 Hinglish Real Estate Query Parser")
+st.caption("Converts colloquial Hinglish search queries into validated structured JSON filters using a cost-aware cascade.")
 
 # 2. Safety & Session State
 if "query_count" not in st.session_state:
@@ -22,9 +23,11 @@ api_key = st.secrets.get("GROQ_API_KEY", os.getenv("GROQ_API_KEY", ""))
 
 # 3. Clickable Example Queries
 EXAMPLES = [
-    "noida me 2bhk sasta near metro", "gurgaon sec 54 3bhk under 1.5cr",
-    "bandra flat 2 bhk rent under 60k", "south delhi 4bhk luxury apartment",
-    "whitefield bangalore 1bhk 25k",
+    "noida me 2bhk sasta near metro",
+    "gurgaon sec 54 3bhk ready to move 1.5cr tak",
+    "furnished 1bhk rent dwarka 25k",
+    "south delhi 4bhk luxury apartment buy 3 to 4 cr",
+    "whitefield bangalore 2bhk semi furnished flat 30k rent",
 ]
 st.write("**Click an example query:**")
 cols = st.columns(len(EXAMPLES))
@@ -58,14 +61,45 @@ if parse_btn:
                 st.info("Running local rule baseline B1. Set GROQ_API_KEY to activate Groq cascade.")
 
             st.success(f"Parsed successfully (Session query {st.session_state.query_count}/10)")
+
+            # Operational Metrics
             m1, m2, m3, m4 = st.columns(4)
-            tier_names = {"cascade_tier1": "Tier 1 (Cheap 20B)", "cascade_tier2": "Tier 2 (Large 120B)"}
-            m1.metric("Tier Used", tier_names.get(res.tier, "Tier 0 (Rule Baseline)"))
+            tier_names = {
+                "cascade_tier1": "Tier 1 (Cheap 20B)",
+                "cascade_tier2": "Tier 2 (Large 120B)",
+                "b1_rules": "Tier 0 (Rule Baseline)",
+            }
+            m1.metric("Tier Used", tier_names.get(res.tier, res.tier))
             m2.metric("Confidence", f"{res.confidence * 100:.0f}%")
             m3.metric("Latency", f"{res.latency_ms:.1f} ms")
             m4.metric("Cost", f"${res.cost_usd:.6f}")
 
-            st.subheader("Structured Search Filter")
+            # Structured Attributes Visual Cards
+            st.subheader("Extracted Attributes")
+            f = res.filter
+            attr_cols = st.columns(4)
+
+            city_loc = f"{f.city or '-'}" + (f" ({f.locality})" if f.locality else "")
+            attr_cols[0].write(f"**📍 Location:** {city_loc}")
+            attr_cols[1].write(f"**🛏️ BHK:** {f.bhk or '-'}")
+            attr_cols[2].write(f"**🏢 Type:** {f.property_type or '-'}")
+            attr_cols[3].write(f"**🤝 Transaction:** {f.transaction or '-'}")
+
+            b_str = "-"
+            if f.budget_min and f.budget_max:
+                b_str = f"₹{f.budget_min:,} - ₹{f.budget_max:,}"
+            elif f.budget_max:
+                b_str = f"Up to ₹{f.budget_max:,}"
+            elif f.budget_min:
+                b_str = f"From ₹{f.budget_min:,}"
+
+            attr_cols[0].write(f"**💰 Budget:** {b_str}")
+            attr_cols[1].write(f"**🛋️ Furnishing:** {f.furnishing or '-'}")
+            attr_cols[2].write(f"**🔑 Possession:** {f.possession or '-'}")
+            near_str = ", ".join(f.near) if f.near else "-"
+            attr_cols[3].write(f"**🚇 Near:** {near_str}")
+
+            st.subheader("Validated JSON Filter (Search Engine Ready)")
             st.json(res.filter.model_dump(exclude_none=True))
 
             if compare_mode:
@@ -88,13 +122,57 @@ if parse_btn:
 
 # 6. Evaluation Results Section
 st.divider()
-st.subheader("Benchmark & Evaluation Results")
+st.subheader("Benchmark & Offline Evaluation Results")
 eval_dir = PROJECT_ROOT / "eval" / "results"
 summary_file = eval_dir / "summary.json"
 plot_file = eval_dir / "cost_vs_accuracy.png"
 
-if summary_file.exists() and plot_file.exists():
-    st.image(str(plot_file), caption="Cost vs Accuracy Pareto Curve")
-    st.json(summary_file.read_text(encoding="utf-8"))
+if summary_file.exists():
+    try:
+        summary_data = json.loads(summary_file.read_text(encoding="utf-8"))
+        num_q = summary_data.get("num_queries", 0)
+        st.write(f"**Evaluated on {num_q} labeled queries** from `{summary_data.get('dataset', 'Data/dev.jsonl')}`")
+
+        systems = summary_data.get("systems", {})
+        if systems:
+            table_rows = []
+            for name, stats in systems.items():
+                display_name = {
+                    "b1_rules": "B1 (Rule Normalizer)",
+                    "b2_cheap": "B2 (Cheap 20B LLM)",
+                    "b3_large": "B3 (Large 120B LLM)",
+                    "cascade": "Cascade (Proposed)",
+                }.get(name, name)
+                table_rows.append({
+                    "System": display_name,
+                    "Micro F1 (%)": f"{stats.get('micro_f1', 0.0):.2f}%",
+                    "Macro F1 (%)": f"{stats.get('macro_f1', 0.0):.2f}%",
+                    "Exact Match (%)": f"{stats.get('exact_match_accuracy', 0.0):.2f}%",
+                    "Latency p50": f"{stats.get('latency_p50_ms', 0.0):.2f} ms",
+                    "Cost / 1k Queries": f"${stats.get('cost_per_1k_queries', 0.0):.4f}",
+                })
+            st.dataframe(table_rows, hide_index=True)
+
+        col_plot, col_ci = st.columns([3, 2])
+        if plot_file.exists():
+            with col_plot:
+                st.image(str(plot_file), caption="Cost vs Accuracy Pareto Curve")
+
+        with col_ci:
+            hyp = summary_data.get("hypothesis_test_cascade_vs_b3", {})
+            if hyp:
+                st.markdown("### Paired Bootstrap Hypothesis Test")
+                st.markdown(f"- **Mean F1 Difference (Cascade - B3):** {hyp.get('mean_diff', 0.0):.2f}%")
+                st.markdown(f"- **95% CI Range:** `[{hyp.get('ci_95_lower', 0.0)}, {hyp.get('ci_95_upper', 0.0)}]`")
+                if hyp.get("passes_preregistered_margin"):
+                    st.success("✅ Pre-registered criterion satisfied: Lower 95% CI bound > -3.0%")
+                else:
+                    st.warning("⚠️ Pre-registered margin check not met")
+
+        # Collapsible Raw Data
+        with st.expander("View Full Summary JSON"):
+            st.json(summary_data)
+    except Exception as err:  # noqa: BLE001
+        st.error(f"Error loading evaluation summary: {err}")
 else:
     st.info("Offline evaluation results will display here once the evaluation suite runs.")

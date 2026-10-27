@@ -2,3 +2,59 @@
 {"query": "gurgaon 3 bhk ready to move 1.5 cr tak", "gold": {"city": "Gurugram", "bhk": 3, "possession": "ready_to_move", "budget_max": 15000000}}
 {"query": "furnished 1bhk rent dwarka 25k", "gold": {"locality": "Dwarka", "bhk": 1, "transaction": "rent", "furnishing": "furnished", "budget_max": 25000}}
 {"query": "4bhk luxury villa buy in bangalore 5-8 cr", "gold": {"city": "Bengaluru", "bhk": 4, "property_type": "villa", "transaction": "buy", "price_preference": "premium", "budget_min": 50000000, "budget_max": 80000000}}
+{"query": "pune me 2 bhk flat rent 20k tak", "gold": {"city": "Pune", "bhk": 2, "property_type": "flat", "transaction": "rent", "budget_max": 20000}}
+{"query": "hyderabad gachibowli 3bhk buy 1.2 cr", "gold": {"city": "Hyderabad", "locality": "Gachibowli", "bhk": 3, "transaction": "buy", "budget_max": 12000000}}
+{"query": "bombay bandra 2bhk sea facing rent under 1 lakh", "gold": {"city": "Mumbai", "locality": "Bandra", "bhk": 2, "transaction": "rent", "budget_max": 100000}}
+{"query": "south delhi 3bhk builder floor purchase 2.5 cr tak", "gold": {"city": "Delhi", "bhk": 3, "property_type": "flat", "transaction": "buy", "budget_max": 25000000}}
+{"query": "kolkata salt lake 2bhk sasta flat 35 lakh", "gold": {"city": "Kolkata", "locality": "Salt Lake", "bhk": 2, "property_type": "flat", "price_preference": "cheap", "budget_max": 3500000}}
+{"query": "chennai omr 2 bhk under construction 45 to 60 lakh", "gold": {"city": "Chennai", "bhk": 2, "possession": "under_construction", "budget_min": 4500000, "budget_max": 6000000}}
+{"query": "noida sec 62 1rk studio rent 12k", "gold": {"city": "Noida", "locality": "Sector 62", "bhk": 1, "transaction": "rent", "budget_max": 12000}}
+{"query": "gurugram sec 54 4bhk luxury apartment 3 cr", "gold": {"city": "Gurugram", "locality": "Sector 54", "bhk": 4, "property_type": "flat", "price_preference": "premium", "budget_max": 30000000}}
+{"query": "bangalore whitefield 2bhk semi furnished flat 30k rent", "gold": {"city": "Bengaluru", "locality": "Whitefield", "bhk": 2, "property_type": "flat", "furnishing": "semi", "transaction": "rent", "budget_max": 30000}}
+{"query": "mumbai andheri west 1bhk rent under 40k", "gold": {"city": "Mumbai", "locality": "Andheri West", "bhk": 1, "transaction": "rent", "budget_max": 40000}}
+{"query": "pune hinjewadi 1bhk rent 15k to 18k near market", "gold": {"city": "Pune", "locality": "Hinjewadi", "bhk": 1, "transaction": "rent", "budget_min": 15000, "budget_max": 18000, "near": ["market"]}}
+{"query": "greater noida 3bhk ready to move flat 60 lakh tak", "gold": {"city": "Greater Noida", "bhk": 3, "property_type": "flat", "possession": "ready_to_move", "budget_max": 6000000}}
+{"query": "delhi rohit nagar 2bhk unfurnished flat rent 18k", "gold": {"city": "Delhi", "bhk": 2, "property_type": "flat", "furnishing": "unfurnished", "transaction": "rent", "budget_max": 18000}}
+{"query": "gurgaon 2bhk affordable housing 25 to 30 lakh", "gold": {"city": "Gurugram", "bhk": 2, "price_preference": "cheap", "budget_min": 2500000, "budget_max": 3000000}}
+{"query": "bangalore koramangala 1bhk fully furnished rent 35k", "gold": {"city": "Bengaluru", "locality": "Koramangala", "bhk": 1, "furnishing": "furnished", "transaction": "rent", "budget_max": 35000}}
+{"query": "hyderabad madhapur pg for boys 8k to 10k", "gold": {"city": "Hyderabad", "locality": "Madhapur", "property_type": "pg", "budget_min": 8000, "budget_max": 10000}}
+{"query": "noida sector 137 2bhk ready to move near expressway 55 lakh", "gold": {"city": "Noida", "locality": "Sector 137", "bhk": 2, "possession": "ready_to_move", "near": ["highway"], "budget_max": 5500000}}
+{"query": "mumbai thane 2 bhk flat buy 80 lakh tak", "gold": {"city": "Mumbai", "locality": "Thane", "bhk": 2, "property_type": "flat", "transaction": "buy", "budget_max": 8000000}}
+{"query": "delhi saket 3bhk luxury builder floor 2 cr", "gold": {"city": "Delhi", "locality": "Saket", "bhk": 3, "property_type": "flat", "price_preference": "premium", "budget_max": 20000000}}
+{"query": "pune wakad 2bhk flat rent 22k near school", "gold": {"city": "Pune", "locality": "Wakad", "bhk": 2, "property_type": "flat", "transaction": "rent", "budget_max": 22000, "near": ["school"]}}
+{"query": "bangalore electronic city 3bhk flat buy under 75 lakh", "gold": {"city": "Bengaluru", "locality": "Electronic City", "bhk": 3, "property_type": "flat", "transaction": "buy", "budget_max": 7500000}}
+{"query": "chennai velachery 2bhk flat rent 20k to 25k", "gold": {"city": "Chennai", "locality": "Velachery", "bhk": 2, "property_type": "flat", "transaction": "rent", "budget_min": 20000, "budget_max": 25000}}
+{"query": "kolkata new town 3bhk under construction flat 70 lakh", "gold": {"city": "Kolkata", "locality": "New Town", "bhk": 3, "property_type": "flat", "possession": "under_construction", "budget_max": 7000000}}
+{"query": "gurugram cyber city near 1bhk rent 30k tak", "gold": {"city": "Gurugram", "bhk": 1, "transaction": "rent", "budget_max": 30000}}
+{"query": "noida extension 2bhk sasta flat 35 lakh me", "gold": {"city": "Noida", "bhk": 2, "property_type": "flat", "price_preference": "cheap", "budget_max": 3500000}}
+{"query": "mumbai powai 2bhk furnished flat rent 55k near hospital", "gold": {"city": "Mumbai", "locality": "Powai", "bhk": 2, "property_type": "flat", "furnishing": "furnished", "transaction": "rent", "budget_max": 55000, "near": ["hospital"]}}
+{"query": "delhi vikas puri 1bhk independent house rent 15k", "gold": {"city": "Delhi", "bhk": 1, "property_type": "house", "transaction": "rent", "budget_max": 15000}}
+{"query": "pune baner 3bhk luxury apartment 1.8 cr buy", "gold": {"city": "Pune", "locality": "Baner", "bhk": 3, "property_type": "flat", "price_preference": "premium", "transaction": "buy", "budget_max": 18000000}}
+{"query": "hyderabad kondapur 2bhk semi furnished flat rent 28k", "gold": {"city": "Hyderabad", "locality": "Kondapur", "bhk": 2, "property_type": "flat", "furnishing": "semi", "transaction": "rent", "budget_max": 28000}}
+{"query": "bangalore sarjapur road 4bhk villa purchase 3 to 4 cr", "gold": {"city": "Bengaluru", "bhk": 4, "property_type": "villa", "transaction": "buy", "budget_min": 30000000, "budget_max": 40000000}}
+{"query": "noida sector 150 3bhk ready to move flat 1.1 cr", "gold": {"city": "Noida", "locality": "Sector 150", "bhk": 3, "property_type": "flat", "possession": "ready_to_move", "budget_max": 11000000}}
+{"query": "gurgaon sohna road 2bhk under construction 50 lakh tak", "gold": {"city": "Gurugram", "bhk": 2, "possession": "under_construction", "budget_max": 5000000}}
+{"query": "mumbai navi mumbai vashi 2bhk flat buy 90 lakh", "gold": {"city": "Mumbai", "locality": "Vashi", "bhk": 2, "property_type": "flat", "transaction": "buy", "budget_max": 9000000}}
+{"query": "south delhi vasant kunj 4bhk kothi sale 6 cr", "gold": {"city": "Delhi", "locality": "Vasant Kunj", "bhk": 4, "property_type": "house", "transaction": "buy", "budget_max": 60000000}}
+{"query": "kolkata howrah 2bhk flat rent 10k to 12k near station", "gold": {"city": "Kolkata", "locality": "Howrah", "bhk": 2, "property_type": "flat", "transaction": "rent", "budget_min": 10000, "budget_max": 12000, "near": ["metro"]}}
+{"query": "chennai anna nagar 3bhk independent house buy 2.2 cr", "gold": {"city": "Chennai", "locality": "Anna Nagar", "bhk": 3, "property_type": "house", "transaction": "buy", "budget_max": 22000000}}
+{"query": "pune kothrud 2bhk flat buy 75 lakh tak", "gold": {"city": "Pune", "locality": "Kothrud", "bhk": 2, "property_type": "flat", "transaction": "buy", "budget_max": 7500000}}
+{"query": "noida sector 75 3bhk flat rent 32k near metro", "gold": {"city": "Noida", "locality": "Sector 75", "bhk": 3, "property_type": "flat", "transaction": "rent", "budget_max": 32000, "near": ["metro"]}}
+{"query": "gurugram sector 57 2bhk builder floor rent 28k", "gold": {"city": "Gurugram", "locality": "Sector 57", "bhk": 2, "property_type": "flat", "transaction": "rent", "budget_max": 28000}}
+{"query": "bangalore indiranagar 3bhk luxury flat rent 70k", "gold": {"city": "Bengaluru", "locality": "Indiranagar", "bhk": 3, "property_type": "flat", "price_preference": "premium", "transaction": "rent", "budget_max": 70000}}
+{"query": "hyderabad kukatpally 2bhk flat buy under 65 lakh", "gold": {"city": "Hyderabad", "locality": "Kukatpally", "bhk": 2, "property_type": "flat", "transaction": "buy", "budget_max": 6500000}}
+{"query": "mumbai borivali 1bhk flat rent 22k to 26k", "gold": {"city": "Mumbai", "locality": "Borivali", "bhk": 1, "property_type": "flat", "transaction": "rent", "budget_min": 22000, "budget_max": 26000}}
+{"query": "delhi janakpuri 2bhk furnished flat rent 25k", "gold": {"city": "Delhi", "locality": "Janakpuri", "bhk": 2, "property_type": "flat", "furnishing": "furnished", "transaction": "rent", "budget_max": 25000}}
+{"query": "greater noida pari chowk residential plot 40 lakh", "gold": {"city": "Greater Noida", "property_type": "plot", "budget_max": 4000000}}
+{"query": "pune viman nagar 1bhk flat rent 20k near airport", "gold": {"city": "Pune", "locality": "Viman Nagar", "bhk": 1, "property_type": "flat", "transaction": "rent", "budget_max": 20000}}
+{"query": "noida sector 18 near mall 2bhk flat 40k rent", "gold": {"city": "Noida", "locality": "Sector 18", "bhk": 2, "property_type": "flat", "transaction": "rent", "budget_max": 40000, "near": ["mall"]}}
+{"query": "gurgaon golf course road 4bhk luxury apartment 4 to 6 cr", "gold": {"city": "Gurugram", "bhk": 4, "property_type": "flat", "price_preference": "premium", "budget_min": 40000000, "budget_max": 60000000}}
+{"query": "bangalore bellandur 2bhk flat rent 35k near tech park", "gold": {"city": "Bengaluru", "locality": "Bellandur", "bhk": 2, "property_type": "flat", "transaction": "rent", "budget_max": 35000}}
+{"query": "hyderabad jubilee hills luxury villa purchase 10 cr", "gold": {"city": "Hyderabad", "locality": "Jubilee Hills", "property_type": "villa", "price_preference": "premium", "transaction": "buy", "budget_max": 100000000}}
+{"query": "chennai thoraipakkam 1bhk rent 14k tak", "gold": {"city": "Chennai", "locality": "Thoraipakkam", "bhk": 1, "transaction": "rent", "budget_max": 14000}}
+{"query": "kolkata tollygunge 2bhk flat buy 45 lakh near metro", "gold": {"city": "Kolkata", "locality": "Tollygunge", "bhk": 2, "property_type": "flat", "transaction": "buy", "budget_max": 4500000, "near": ["metro"]}}
+{"query": "mumbai goregaon east 2bhk unfurnished flat rent 38k", "gold": {"city": "Mumbai", "locality": "Goregaon East", "bhk": 2, "property_type": "flat", "furnishing": "unfurnished", "transaction": "rent", "budget_max": 38000}}
+{"query": "delhi pitampura 3bhk builder floor 1.6 cr buy", "gold": {"city": "Delhi", "locality": "Pitampura", "bhk": 3, "property_type": "flat", "transaction": "buy", "budget_max": 16000000}}
+{"query": "pune magarpatta city 2bhk semi furnished flat 26k rent", "gold": {"city": "Pune", "bhk": 2, "property_type": "flat", "furnishing": "semi", "transaction": "rent", "budget_max": 26000}}
+{"query": "noida sector 76 2bhk ready flat 50 lakh tak", "gold": {"city": "Noida", "locality": "Sector 76", "bhk": 2, "property_type": "flat", "possession": "ready_to_move", "budget_max": 5000000}}
+{"query": "gurugram sector 48 3bhk ready to move 1.4 cr near school and hospital", "gold": {"city": "Gurugram", "locality": "Sector 48", "bhk": 3, "possession": "ready_to_move", "budget_max": 14000000, "near": ["school", "hospital"]}}

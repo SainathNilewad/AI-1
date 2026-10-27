@@ -21,14 +21,21 @@ Extract the user's intent into a clean JSON object with these optional fields:
 - "budget_max": integer in INR (e.g. 15000000) or null
 - "city": standardized title-case string (e.g. "Noida", "Gurugram", "Mumbai", "Delhi", "Bengaluru") or null
 - "locality": string (e.g. "Sector 54", "Bandra West", "Whitefield") or null
-- "property_type": lowercase string ("apartment", "villa", "plot", "builder_floor", "commercial") or null
+- "property_type": lowercase string ("flat", "house", "plot", "villa", "pg") or null
+- "transaction": lowercase string ("buy", "rent") or null
+- "furnishing": lowercase string ("furnished", "semi", "unfurnished") or null
+- "possession": lowercase string ("ready_to_move", "under_construction") or null
+- "price_preference": lowercase string ("cheap", "premium", "none") or null
+- "near": list of standardized strings (e.g. ["metro", "hospital", "school", "market", "mall", "highway"]) or []
 
 Rules:
 1. Always normalize city names: "gurgaon" -> "Gurugram", "bangalore" -> "Bengaluru", "bombay" -> "Mumbai".
 2. Convert currency multipliers: "k" -> *1000, "lac"/"lakh" -> *100000, "cr"/"crore" -> *10000000.
-3. If "under" or "below", set budget_max. If "above" or "min", set budget_min. If a range like "1 to 1.5 cr", set both.
-4. If a field is not mentioned or cannot be inferred with certainty, set it to null.
-5. Return ONLY a valid JSON object matching the keys above. Do not include markdown codeblocks or conversational text."""
+3. If "under" or "below" or "tak", set budget_max. If "above" or "min", set budget_min. If a range like "1 to 1.5 cr", set both.
+4. "rent"/"kiraya" -> transaction: "rent"; "buy"/"kharidna"/"purchase" -> transaction: "buy".
+5. "sasta"/"cheap"/"affordable" -> price_preference: "cheap"; "luxury"/"premium"/"posh" -> price_preference: "premium".
+6. If a field is not mentioned or cannot be inferred with certainty, set it to null (or [] for near).
+7. Return ONLY a valid JSON object matching the keys above. Do not include markdown codeblocks or conversational text."""
 
 
 def compute_token_cost(model_name: str, input_tokens: int, output_tokens: int) -> float:

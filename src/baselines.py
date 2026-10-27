@@ -30,6 +30,7 @@ class ExtractionResult(BaseModel):
 def _dict_to_filter(data: dict[str, Any]) -> SearchFilter:
     """Safely cast raw dictionary to SearchFilter with canonical value mappings."""
     clean_data = dict(data)
+
     ptype = clean_data.get("property_type")
     if isinstance(ptype, str):
         ptype_clean = ptype.lower().strip()
@@ -46,12 +47,77 @@ def _dict_to_filter(data: dict[str, Any]) -> SearchFilter:
         else:
             clean_data["property_type"] = None
 
+    tx = clean_data.get("transaction")
+    if isinstance(tx, str):
+        tx_clean = tx.lower().strip()
+        if tx_clean in ["rent", "kiraya", "on rent"]:
+            clean_data["transaction"] = "rent"
+        elif tx_clean in ["buy", "purchase", "sale", "kharidna"]:
+            clean_data["transaction"] = "buy"
+        else:
+            clean_data["transaction"] = None
+
+    furn = clean_data.get("furnishing")
+    if isinstance(furn, str):
+        f_clean = furn.lower().strip()
+        if "semi" in f_clean:
+            clean_data["furnishing"] = "semi"
+        elif "unfurnished" in f_clean or "khali" in f_clean:
+            clean_data["furnishing"] = "unfurnished"
+        elif "furnished" in f_clean:
+            clean_data["furnishing"] = "furnished"
+        else:
+            clean_data["furnishing"] = None
+
+    poss = clean_data.get("possession")
+    if isinstance(poss, str):
+        p_clean = poss.lower().strip()
+        if "ready" in p_clean or "rtm" in p_clean:
+            clean_data["possession"] = "ready_to_move"
+        elif "under" in p_clean or "construction" in p_clean or "uc" in p_clean:
+            clean_data["possession"] = "under_construction"
+        else:
+            clean_data["possession"] = None
+
+    pref = clean_data.get("price_preference")
+    if isinstance(pref, str):
+        pr_clean = pref.lower().strip()
+        if pr_clean in ["cheap", "sasta", "low budget", "affordable", "budget"]:
+            clean_data["price_preference"] = "cheap"
+        elif pr_clean in ["premium", "luxury", "posh", "mehenga"]:
+            clean_data["price_preference"] = "premium"
+        else:
+            clean_data["price_preference"] = None
+
+    near_val = clean_data.get("near")
+    if isinstance(near_val, list):
+        clean_data["near"] = [str(item).lower().strip() for item in near_val if item]
+    elif isinstance(near_val, str) and near_val:
+        clean_data["near"] = [near_val.lower().strip()]
+    else:
+        clean_data["near"] = []
+
     valid_fields = {
         k: clean_data[k]
-        for k in ["bhk", "budget_min", "budget_max", "city", "locality", "property_type"]
+        for k in [
+            "bhk",
+            "budget_min",
+            "budget_max",
+            "city",
+            "locality",
+            "property_type",
+            "transaction",
+            "furnishing",
+            "possession",
+            "price_preference",
+            "near",
+            "area_sqft_min",
+            "area_sqft_max",
+        ]
         if k in clean_data and clean_data[k] is not None
     }
     return SearchFilter(**valid_fields)
+
 
 
 def parse_b1(query: str) -> ExtractionResult:

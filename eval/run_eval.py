@@ -7,8 +7,14 @@ metrics to eval/results/summary.json, and generates cost_vs_accuracy.png.
 import argparse
 import json
 import os
+import sys
 from pathlib import Path
 from typing import Any
+
+# Ensure project root is in sys.path when executed directly
+_ROOT = Path(__file__).resolve().parent.parent
+if str(_ROOT) not in sys.path:
+    sys.path.insert(0, str(_ROOT))
 
 from PIL import Image, ImageDraw
 

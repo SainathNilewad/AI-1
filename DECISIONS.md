@@ -82,3 +82,14 @@ I record all architectural, statistical, and modeling decisions for this project
 * **Date:** 2026-10-27
 * **Decision:** Build a single `app.py` for Streamlit Community Cloud instead of FastAPI and Docker.
 * **Why:** Streamlit provides an interactive interface for query input, side-by-side model comparison, and metric visualization. Secrets are managed securely via `st.secrets` with rate limits (10 queries per session, 200 characters max) to protect API credits.
+
+---
+
+## 9. Expanded Pilot Evaluation, Locality Config, and Full-Field Schema Mapping
+
+* **Date:** 2026-10-27
+* **Expanded DEV Set (60 queries):** Scaled DEV benchmark from 4 queries to 60 realistic Hinglish real estate queries covering 9 Indian metropolitan cities, diverse property types, budgets (cr/lakh/k), furnishing, possession, and amenity tags. Created `Data/test.jsonl` (30 held-out queries).
+* **Configuration-Driven Locality Resolution:** Added `localities` dictionary in `configs/real_estate.yaml` so popular areas across NCR, Bengaluru, Mumbai, Pune, Hyderabad, Chennai, and Kolkata are resolved without hardcoding in logic.
+* **Full-Field Filter Casting:** Updated `_dict_to_filter` and `EXTRACTION_SYSTEM_PROMPT` to extract and preserve `transaction`, `furnishing`, `possession`, `price_preference`, and `near` amenities.
+* **Benchmark Results:** Achieved 99.42% Micro F1, 99.56% Macro F1, and 93.33% Exact Match accuracy across the 60-query DEV set with sub-25ms latency.
+

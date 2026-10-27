@@ -132,12 +132,60 @@ def extract_regex_candidates(text: str, domain: str = "real_estate") -> dict[str
             matched_tx = canonical
             break
 
+    matched_furnishing = None
+    furn_keywords = keywords.get("furnishing", {})
+    for kw, canonical in sorted(furn_keywords.items(), key=lambda x: len(x[0]), reverse=True):
+        if re.search(rf"\b{re.escape(kw)}\b", clean):
+            matched_furnishing = canonical
+            break
+
+    matched_possession = None
+    poss_keywords = keywords.get("possession", {})
+    for kw, canonical in sorted(poss_keywords.items(), key=lambda x: len(x[0]), reverse=True):
+        if re.search(rf"\b{re.escape(kw)}\b", clean):
+            matched_possession = canonical
+            break
+
+    matched_pref = None
+    pref_keywords = keywords.get("price_preference", {})
+    for kw, canonical in sorted(pref_keywords.items(), key=lambda x: len(x[0]), reverse=True):
+        if re.search(rf"\b{re.escape(kw)}\b", clean):
+            matched_pref = canonical
+            break
+
+    matched_near: list[str] = []
+    near_kws = keywords.get("near_amenities", {})
+    for kw, canonical in sorted(near_kws.items(), key=lambda x: len(x[0]), reverse=True):
+        if (
+            re.search(rf"\b(?:near|paas|close to)\s+(?:the\s+)?{re.escape(kw)}\b", clean)
+            or re.search(rf"\b{re.escape(kw)}\s+(?:ke\s+)?paas\b", clean)
+            or (re.search(r"\b(?:near|paas)\b", clean) and re.search(rf"\b{re.escape(kw)}\b", clean))
+        ) and canonical not in matched_near:
+            matched_near.append(canonical)
+
+    matched_locality = None
+    sec_match = re.search(r"\b(?:sector|sec)\s*(\d+[a-zA-Z]?)\b", clean)
+    if sec_match:
+        matched_locality = f"Sector {sec_match.group(1).upper()}"
+    else:
+        localities_map = cfg.get("localities", {})
+        for loc_alias, canonical_loc in sorted(localities_map.items(), key=lambda x: len(x[0]), reverse=True):
+            if re.search(rf"\b{re.escape(loc_alias)}\b", clean):
+                matched_locality = canonical_loc
+                break
+
+
     return {
         "bhk": bhk,
         "budget_min": budget_min,
         "budget_max": budget_max,
         "city": matched_city,
-        "locality": None,
+        "locality": matched_locality,
         "property_type": matched_ptype,
         "transaction": matched_tx,
+        "furnishing": matched_furnishing,
+        "possession": matched_possession,
+        "price_preference": matched_pref,
+        "near": matched_near,
     }
+
