@@ -1,5 +1,6 @@
 from pathlib import Path
 from typing import Any
+
 import yaml
 
 # Anchor to project root so paths resolve identically across tests and CLI runs
@@ -23,7 +24,7 @@ def load_yaml(file_path: Path | str) -> dict[str, Any]:
         raise ValueError(f"Configuration file is empty: {path}")
 
     if not isinstance(data, dict):
-        raise ValueError(f"Configuration file root must be a mapping/dict: {path}")
+        raise ValueError(f"Configuration file root must be a mapping/dict: {path}")  # noqa: TRY004
 
     return data
 

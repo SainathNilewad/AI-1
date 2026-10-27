@@ -1,5 +1,4 @@
 import re
-from typing import Any
 
 
 def clean_text(text: str) -> str:
@@ -11,7 +10,7 @@ def parse_currency_amount(amount: str | float, unit: str, units_map: dict[str, i
     """Convert a numeric amount and unit into an integer INR value."""
     multiplier = units_map.get(unit.lower().strip(), 1)
     val = float(amount) * multiplier
-    return int(round(val))
+    return round(val)
 
 
 def normalize_city(city_raw: str, aliases: dict[str, str]) -> str:

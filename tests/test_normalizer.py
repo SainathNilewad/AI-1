@@ -1,4 +1,5 @@
 import pytest
+
 from src.config import load_domain_config
 from src.normalizer import (
     clean_text,
