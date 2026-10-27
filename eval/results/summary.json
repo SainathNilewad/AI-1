@@ -1,13 +1,13 @@
 {
-  "dataset": "Data/dev.jsonl",
-  "num_queries": 60,
+  "dataset": "Data/test.jsonl",
+  "num_queries": 30,
   "systems": {
     "b1_rules": {
-      "micro_f1": 99.42,
-      "macro_f1": 99.56,
+      "micro_f1": 99.15,
+      "macro_f1": 99.41,
       "exact_match_accuracy": 93.33,
-      "latency_p50_ms": 8.54,
-      "latency_p95_ms": 16.59,
+      "latency_p50_ms": 8.77,
+      "latency_p95_ms": 17.2,
       "total_cost_usd": 0.0,
       "cost_per_1k_queries": 0.0,
       "escalation_rate_pct": 0.0,
@@ -18,9 +18,9 @@
           "f1": 100.0
         },
         "locality": {
-          "precision": 91.49,
-          "recall": 100.0,
-          "f1": 95.56
+          "precision": 96.0,
+          "recall": 92.31,
+          "f1": 94.12
         },
         "bhk": {
           "precision": 100.0,
@@ -65,11 +65,11 @@
       }
     },
     "b2_cheap": {
-      "micro_f1": 99.42,
-      "macro_f1": 99.56,
+      "micro_f1": 99.15,
+      "macro_f1": 99.41,
       "exact_match_accuracy": 93.33,
-      "latency_p50_ms": 8.68,
-      "latency_p95_ms": 11.57,
+      "latency_p50_ms": 8.45,
+      "latency_p95_ms": 12.61,
       "total_cost_usd": 0.0,
       "cost_per_1k_queries": 0.0,
       "escalation_rate_pct": 0.0,
@@ -80,9 +80,9 @@
           "f1": 100.0
         },
         "locality": {
-          "precision": 91.49,
-          "recall": 100.0,
-          "f1": 95.56
+          "precision": 96.0,
+          "recall": 92.31,
+          "f1": 94.12
         },
         "bhk": {
           "precision": 100.0,
@@ -127,11 +127,11 @@
       }
     },
     "b3_large": {
-      "micro_f1": 99.42,
-      "macro_f1": 99.56,
+      "micro_f1": 99.15,
+      "macro_f1": 99.41,
       "exact_match_accuracy": 93.33,
-      "latency_p50_ms": 8.52,
-      "latency_p95_ms": 12.31,
+      "latency_p50_ms": 8.88,
+      "latency_p95_ms": 13.29,
       "total_cost_usd": 0.0,
       "cost_per_1k_queries": 0.0,
       "escalation_rate_pct": 0.0,
@@ -142,9 +142,9 @@
           "f1": 100.0
         },
         "locality": {
-          "precision": 91.49,
-          "recall": 100.0,
-          "f1": 95.56
+          "precision": 96.0,
+          "recall": 92.31,
+          "f1": 94.12
         },
         "bhk": {
           "precision": 100.0,
@@ -189,11 +189,11 @@
       }
     },
     "cascade": {
-      "micro_f1": 99.42,
-      "macro_f1": 99.56,
+      "micro_f1": 99.15,
+      "macro_f1": 99.41,
       "exact_match_accuracy": 93.33,
-      "latency_p50_ms": 9.06,
-      "latency_p95_ms": 12.15,
+      "latency_p50_ms": 10.59,
+      "latency_p95_ms": 16.54,
       "total_cost_usd": 0.0,
       "cost_per_1k_queries": 0.0,
       "escalation_rate_pct": 0.0,
@@ -204,9 +204,9 @@
           "f1": 100.0
         },
         "locality": {
-          "precision": 91.49,
-          "recall": 100.0,
-          "f1": 95.56
+          "precision": 96.0,
+          "recall": 92.31,
+          "f1": 94.12
         },
         "bhk": {
           "precision": 100.0,
