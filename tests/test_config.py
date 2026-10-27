@@ -9,10 +9,9 @@ def test_load_pricing_config_success():
     assert isinstance(pricing, dict)
     assert "effective_date" in pricing
     assert "currency" in pricing
-    assert "models" in pricing
-    assert "gpt-4o-mini" in pricing["models"]
+    assert "openai/gpt-oss-20b" in pricing["models"]
 
-    mini = pricing["models"]["gpt-4o-mini"]
+    mini = pricing["models"]["openai/gpt-oss-20b"]
     assert "input_cost_per_1m" in mini
     assert "output_cost_per_1m" in mini
     assert mini["input_cost_per_1m"] > 0
